@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="71097C85-FA60-9A50-AAC5-4377791FF6D2" name="UTBC_contract_invoicev1">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>4468F16D-5ADC-78F8-F5EA-43E982AFBB96</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<containerWithKeyObject>815A8AA5-127F-4BB9-15D5-629AF86D826E</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>A1E46E92-6FC8-8D71-2FB4-7F882B264427</localFKIndex>
+<keyObject>4DEEEA88-89CA-D061-0F5F-644B6586D2BF</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="928D27BC-FD4D-E7E6-A7E6-97576713BE69" name="UTBC_vendor">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>6004F8B6-A996-04E8-A2E8-49BDCFEB8C8C</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vendor_id" id="5BDCA0D8-152D-600A-686C-DAF1CD481C0C">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>31C6E9B9-B50E-7B24-A0E0-4A8D1E959541</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="450BFF15-D72C-4151-F372-5F7DE4F2E93C">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>045BC827-63CD-7895-6AF8-EDE4505DB35A</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region_id" id="FD91034F-BC87-69B2-A5E3-D9C9FAD576AE">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>455F4E7C-D3D0-9461-3119-96CC66B0349D</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>BD80106B-165F-002D-BBC5-B70A3B0A6896</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF2A7107-5EA2-F450-25D3-07AC676D8B6F" referredColumn="BD80106B-165F-002D-BBC5-B70A3B0A6896"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B146658C-2EA4-2AFF-714E-D6AF9364AFE2" name="UTBC_vendor_PK">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>E3FCD50F-9419-EC27-878E-24B4E6244048</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BDCA0D8-152D-600A-686C-DAF1CD481C0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3255E4F5-439E-56F9-1932-60500EFC3DC6" name="UTBC_relation_vendor_region">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>7EED9406-01C7-D2D9-89D3-FC3BD6107B16</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD91034F-BC87-69B2-A5E3-D9C9FAD576AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

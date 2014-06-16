@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92D26DD3-BE0C-354F-3501-C17D68CD6CFA" name="UTBC_talk">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>8FA827C9-8FE7-2081-3FF2-7859605BDFF1</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="talk_id" id="4F775B43-B91F-D053-6578-A91FCD98CDB5">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>BCCCDA1F-0D14-AF60-B339-8CA0B83EBF55</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note_id" id="848A6232-138A-EA11-B523-01B82D16CF5E">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>243AD67B-941C-951C-BC69-297D0DD9F87B</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>10656120-97F9-3A7F-97C6-8B989144BF77</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A73F458-7D39-127C-3DDF-D641886C8254" referredColumn="10656120-97F9-3A7F-97C6-8B989144BF77"/>
+</associations>
+</Column>
+<Column name="date" id="CAF47524-B252-5A61-21EE-06EDF5A71ABF">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>54A5782B-4323-D099-5C79-6E5CE9CBF955</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contact_id" id="F5EF1A74-AEA9-4598-B21F-A1D8043450C5">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>8CB41A17-5E49-696E-C49F-43A2D15074B7</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9639C747-6A5F-3C19-0D5F-122B5D388C02</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C50E323-1E83-B62A-85BC-C77ED833AD35" referredColumn="9639C747-6A5F-3C19-0D5F-122B5D388C02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC1CB72F-6BE1-83AC-DD51-783DAFD6674A" name="UTBC_correspondance_PK">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>3805C44C-A074-4764-B58B-C1A98962B5A2</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F775B43-B91F-D053-6578-A91FCD98CDB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="139F3FF7-7160-5242-B5E5-3950BD9F606C" name="UTBC_talk__IDX">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>60E9DCA4-80E7-6473-C790-ACDE0ABAF217</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="848A6232-138A-EA11-B523-01B82D16CF5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42D640A4-0925-60C3-62F4-2411A69EB163" name="UTBC_contact_talk">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>6E00CC7B-0FCB-245F-BF5C-C838363249F6</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5EF1A74-AEA9-4598-B21F-A1D8043450C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7116062E-0CCB-0862-46F5-03E24CD14C8C" name="UTBC_notes_talk">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>60E9DCA4-80E7-6473-C790-ACDE0ABAF217</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="848A6232-138A-EA11-B523-01B82D16CF5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

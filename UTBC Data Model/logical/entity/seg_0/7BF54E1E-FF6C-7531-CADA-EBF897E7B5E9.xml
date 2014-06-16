@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9" name="UTBC_contact">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-24 21:46:12 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contact_id" id="2F20A6BF-A4F0-8208-8F9C-02F72B6DD899">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-24 21:46:32 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="1E7E5F9C-F734-B556-AD5E-2E76F2627901">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-11 13:47:14 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>UT as Tenant</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<listOfValues>
+<valueDef value="Contact" description=""/>
+<valueDef value="External Customer" description=""/>
+<valueDef value="UT as Landlord" description=""/>
+<valueDef value="UT as Tenant" description=""/>
+<valueDef value="Vendor" description=""/>
+<valueDef value="Vendor Landlord" description=""/>
+</listOfValues>
+</Attribute>
+<Attribute name="first_name" id="489E64CE-8A26-3B97-39CD-840B6775AF10">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-24 21:46:57 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="last_name" id="9F036A51-F571-9963-76B8-E794A7F8B7D6">
+<createdBy>tashar</createdBy>
+<createdTime>2014-03-25 21:27:10 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="title" id="24F99BDF-3A65-1B31-289B-0D78EB7F95AD">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-25 15:08:35 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="phone" id="9691E2DB-2DD5-55AD-6669-957B08E2D6DB">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-26 18:50:31 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+</Attribute>
+<Attribute name="fax" id="9AC1C28D-801A-F1FE-DBAC-6D72FFFFECDE">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-26 18:49:51 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+</Attribute>
+<Attribute name="email" id="894B2E27-B92B-8970-E0A4-F198B947F51B">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-28 01:05:41 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="region_id" id="FE69AC07-B087-CB05-EA94-542F2356290B">
+<createdBy>tashar</createdBy>
+<createdTime>2014-03-25 21:25:18 UTC</createdTime>
+<generatorID>CE967970-2903-3CCA-9CC8-5C1F4F91D2DC</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>77919257-6FC4-2D4D-7EE7-E30E719DE142</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6B7A1E7D-39B3-A6BF-00EA-240023EBDE46" name="UTBC_contact PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-24 21:46:53 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</newElementsIDs>
+<usedAttributes>
+<attributeRef>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

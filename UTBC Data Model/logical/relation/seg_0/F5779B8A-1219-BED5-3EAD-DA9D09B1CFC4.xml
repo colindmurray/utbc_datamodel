@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UTBC_deptcontact_amendment" directorySegmentName="seg_0" id="F5779B8A-1219-BED5-3EAD-DA9D09B1CFC4">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:31:50 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<sourcePk>6B7A1E7D-39B3-A6BF-00EA-240023EBDE46</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CD141027-DEA0-C726-D52F-B6502B143350</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

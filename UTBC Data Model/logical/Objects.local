@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="CD141027-DEA0-C726-D52F-B6502B143350" name="UTBC_amendment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6E8903AA-1223-92EC-A0F8-29003A76093B" name="UTBC_building" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9" name="UTBC_contact" seqName="seg_0"/>
+   <object objectType="Entity" objectID="041D338E-5AC8-C1CE-29D4-044C6424D239" name="UTBC_contract" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4403D2B9-AE91-C676-AF40-230437003AB8" name="UTBC_department" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="UTBC_document" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F299C3B1-DCAC-0F89-AAA7-07C315D413F4" name="UTBC_invoice" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7D2ED371-8917-5F24-EAC8-D830F0FDF923" name="UTBC_notes" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D023ACDE-F751-F38F-89E7-26F138E5D845" name="UTBC_payment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2B63DC64-7D61-8B8B-2119-84848F1AFD55" name="UTBC_region" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8FA827C9-8FE7-2081-3FF2-7859605BDFF1" name="UTBC_talk" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E007E438-1902-5693-98BE-36673090AC61" name="UTBC_ticklers" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6004F8B6-A996-04E8-A2E8-49BDCFEB8C8C" name="UTBC_vendor" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8E3073FF-153F-1BCF-78DC-7036136DB099" name="UTBC_Contract_amendment" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0074609F-8DC9-C239-C677-B908CE28770E" name="UTBC_amendment_notes" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FB1C561F-CBEF-343E-496D-8DD245A7D444" name="UTBC_amendment_prog_aproval" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C9382DC4-3C2B-3B37-D60E-32885079490A" name="UTBC_building_department" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6E00CC7B-0FCB-245F-BF5C-C838363249F6" name="UTBC_contact_talk" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5C905AAC-DBAB-AC46-1208-F9AC04B92F91" name="UTBC_contact_tickler" seqName="seg_0"/>
+   <object objectType="Relation" objectID="33871734-CB4D-B491-5FE9-12DE806BF338" name="UTBC_contract_document" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4468F16D-5ADC-78F8-F5EA-43E982AFBB96" name="UTBC_contract_invoicev1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AD6DA293-E9A1-368D-D419-7AB4DFEC2951" name="UTBC_department_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="70118511-699F-F81E-D484-A2C62831A5E6" name="UTBC_department_tickler" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F5779B8A-1219-BED5-3EAD-DA9D09B1CFC4" name="UTBC_deptcontact_amendment" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2823A340-42AA-79EA-935D-EA53F27CCF2A" name="UTBC_deptcontact_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F51D377B-A58D-0172-B161-87E3692039CB" name="UTBC_deptcontact_contractv1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="474A1B3B-8AB6-3385-125A-18718BEE4257" name="UTBC_deptcontact_contractv2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="48C680C5-EA8A-0DEA-F388-969BAE6F8523" name="UTBC_document_talk" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7140055D-D8CA-D98B-FF7D-AE6D6DD58111" name="UTBC_invoice_document" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2A5B4C53-7828-4F8C-CAD0-84B17858A67C" name="UTBC_invoice_payment" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EE171877-228B-87EF-6CE3-CA7F427A7BDA" name="UTBC_notes_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="60E9DCA4-80E7-6473-C790-ACDE0ABAF217" name="UTBC_notes_talk" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E8A27D74-983E-945C-CAEC-64CB6975A0B3" name="UTBC_payment_document" seqName="seg_0"/>
+   <object objectType="Relation" objectID="48F7F8F6-AFB7-12DE-AE26-854494EC391E" name="UTBC_programatic_approval" seqName="seg_0"/>
+   <object objectType="Relation" objectID="94750315-6325-DA97-FDD5-F86D42F25DD8" name="UTBC_region_building" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CE967970-2903-3CCA-9CC8-5C1F4F91D2DC" name="UTBC_relation_contact_region" seqName="seg_0"/>
+   <object objectType="Relation" objectID="59F4D50C-36BE-7A85-6415-1E6E61ACD388" name="UTBC_relation_contract_department" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3191444C-CDD6-64BB-98E4-048D182B5BAE" name="UTBC_relation_contract_details_document" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5401B39D-F3CC-7BD7-1A34-92C4423204FA" name="UTBC_relation_contract_vendor" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7EED9406-01C7-D2D9-89D3-FC3BD6107B16" name="UTBC_relation_vendor_region" seqName="seg_0"/>
+   <object objectType="Relation" objectID="58315F99-5194-941B-D948-5D9FC0443EC5" name="UTBC_tickler_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AB12CC3C-5117-2BC1-B86D-C2CD84D06703" name="UTBC_vendor_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A76D6073-4701-683B-B86E-B58CDC60ADDC" name="UTBC_vendor_tickler" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

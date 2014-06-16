@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E007E438-1902-5693-98BE-36673090AC61" name="UTBC_ticklers">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:17:07 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tickler_id" id="130AF488-3168-6F06-574A-B9F6302F50AA">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:17:25 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<use>0</use>
+</Attribute>
+<Attribute name="end_date" id="25249E19-F809-F586-8882-54AA5EA554F0">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:17:37 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="description" id="61E1FA31-6BE4-D276-60C9-8DDD29E2C272">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:17:57 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="contract_id" id="2B3A547A-7DAC-57F3-A715-2115C5391FA7">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:19:08 UTC</createdTime>
+<generatorID>58315F99-5194-941B-D948-5D9FC0443EC5</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C588EE76-BE5A-9C5D-8176-1267087A0FC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="contact_id" id="894B19FE-1F26-D838-E2A1-5411591198F0">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:19:17 UTC</createdTime>
+<generatorID>5C905AAC-DBAB-AC46-1208-F9AC04B92F91</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="department_id" id="67F2B7E1-E274-643F-916D-175DC6839A9C">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:19:40 UTC</createdTime>
+<generatorID>70118511-699F-F81E-D484-A2C62831A5E6</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="vendor_id" id="5B58EB1D-9A88-2585-2901-16D66BF9ECEA">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:20:10 UTC</createdTime>
+<generatorID>A76D6073-4701-683B-B86E-B58CDC60ADDC</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>31C6E9B9-B50E-7B24-A0E0-4A8D1E959541</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="99C71E94-5A15-4371-F48F-F3EA52E061DD" name="UTBC_ticklers PK">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:18:17 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>130AF488-3168-6F06-574A-B9F6302F50AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D2ED371-8917-5F24-EAC8-D830F0FDF923" name="UTBC_notes">
+<createdBy>tashar</createdBy>
+<createdTime>2014-04-08 21:42:42 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="note_id" id="C6CCDF90-43A1-A592-0E3B-BBB24162D103">
+<createdBy>tashar</createdBy>
+<createdTime>2014-04-08 21:42:54 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="note" id="B6D5F873-B775-E213-59EB-D61280A80C0E">
+<createdBy>tashar</createdBy>
+<createdTime>2014-04-08 21:57:53 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="contract_id" id="7B29AAB1-B1DD-7E30-84A5-EAFA768BD1B8">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:09:21 UTC</createdTime>
+<generatorID>EE171877-228B-87EF-6CE3-CA7F427A7BDA</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C588EE76-BE5A-9C5D-8176-1267087A0FC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="amendment_id" id="CDC9466D-208E-C45A-7563-F6A76164EC4A">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:13:06 UTC</createdTime>
+<generatorID>0074609F-8DC9-C239-C677-B908CE28770E</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C8101DD0-E8F8-DF1F-47EF-AB29E457F187" name="UTBC_notes PK">
+<createdBy>tashar</createdBy>
+<createdTime>2014-04-08 22:05:27 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C6CCDF90-43A1-A592-0E3B-BBB24162D103</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

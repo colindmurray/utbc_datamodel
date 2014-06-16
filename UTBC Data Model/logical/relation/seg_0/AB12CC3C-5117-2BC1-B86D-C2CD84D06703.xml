@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UTBC_vendor_contract" directorySegmentName="seg_0" id="AB12CC3C-5117-2BC1-B86D-C2CD84D06703">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:20:53 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<sourcePk>E3FCD50F-9419-EC27-878E-24B4E6244048</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6004F8B6-A996-04E8-A2E8-49BDCFEB8C8C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>041D338E-5AC8-C1CE-29D4-044C6424D239</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

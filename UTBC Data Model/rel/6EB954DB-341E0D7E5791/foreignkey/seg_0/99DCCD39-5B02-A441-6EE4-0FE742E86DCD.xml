@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="99DCCD39-5B02-A441-6EE4-0FE742E86DCD" name="UTBC_deptcontact_amendment">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:46:34 UTC</createdTime>
+<generatorID>F5779B8A-1219-BED5-3EAD-DA9D09B1CFC4</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<containerWithKeyObject>3F2FD26F-0950-4FD2-4A88-29BE48E3989D</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>E5A6E767-C107-175B-EC36-A390B2C83EDD</localFKIndex>
+<keyObject>D00727C9-F091-E5D3-00B9-781858C82591</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,463 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="041D338E-5AC8-C1CE-29D4-044C6424D239" name="UTBC_contract">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<generatorID>74CDC108-A133-3D91-BB95-CCCEC15915D3</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contract_id" id="C588EE76-BE5A-9C5D-8176-1267087A0FC7">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<generatorID>4ABC3CE5-D565-856B-18F9-586233EB6346</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="purpose" id="E411C458-073E-8D2E-67D3-BFADB743BCE4">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="start_date" id="4A8CCCD7-5BBB-7101-E5BF-AC092F09617A">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="end_date" id="42C63085-A456-5892-3AD4-D5256EC93953">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="signed_date" id="0012A278-6D44-1615-98FC-308A4E701241">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="current_amount" id="1E409D0E-B3CE-729C-8117-0884F09D0BF8">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="OGC" id="1DB4A01B-FD4B-DA18-F825-93C9BACEB8AE">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="EVC" id="A7DE121B-EBC6-DE4A-60FA-AC8C3CCDD50F">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="BOR" id="1950784E-820D-7EDB-550C-6DCC7AF59D4C">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="docket" id="D7FE49E8-E951-B2EC-F489-9F54613F3919">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="docket_date" id="01BE53A5-4CB9-94AC-AB25-E698258394A0">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="system_notes" id="4965422E-D628-3782-90AD-258C7DDB1437">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="received_date" id="14E7624F-48E7-19AA-8466-80AFFCEBFC43">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="faculty_use_of_ut_building" id="AEB255FF-78A8-DCE9-5F1A-2E84035F9D6C">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="renewable" id="EDDD044C-B034-EE8E-A6A8-CF34C82E22B8">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="status" id="84185646-AAA5-3F22-C6C9-40E0F67692C5">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="service_type" id="340AD7C7-BBE2-430C-9431-64F873D26AC1">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+</Attribute>
+<Attribute name="account_type" id="AB2C2A3C-95FE-3BAE-A599-76F8B5BEE66E">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+</Attribute>
+<Attribute name="last_contact_date" id="673150D7-5F7D-E085-D8EA-B1CE914FF71F">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="logged_by" id="16599505-D1D4-1C68-6C0E-0DB42171641A">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+</Attribute>
+<Attribute name="contract_number" id="F66B4F3D-F279-5154-D0A2-3D4BBCA0452F">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:02:00 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="original_amount" id="54D3BEEF-6869-7464-6D07-949B151FFA04">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:02:00 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="department_id" id="1D1483A1-46EC-C0D9-CF95-FB72C830306B">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:20:22 UTC</createdTime>
+<generatorID>AD6DA293-E9A1-368D-D419-7AB4DFEC2951</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="vendor_id" id="3B0EE9CC-006B-5D21-41D7-0FFA7B9A4271">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:20:53 UTC</createdTime>
+<generatorID>AB12CC3C-5117-2BC1-B86D-C2CD84D06703</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>31C6E9B9-B50E-7B24-A0E0-4A8D1E959541</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="dept_contact_id" id="D3269A89-B84B-B83C-8E96-9B2BA45F13BC">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:21:21 UTC</createdTime>
+<generatorID>474A1B3B-8AB6-3385-125A-18718BEE4257</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="note_id" id="D09496BE-DFE4-737F-777C-5BEDEC9B359D">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:28:17 UTC</createdTime>
+<generatorID>EE171877-228B-87EF-6CE3-CA7F427A7BDA</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C6CCDF90-43A1-A592-0E3B-BBB24162D103</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="dept_contact_admin_id" id="C0EFA389-9AC8-BF0F-CB77-0C207B5901FF">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:36:49 UTC</createdTime>
+<generatorID>F51D377B-A58D-0172-B161-87E3692039CB</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="reviewed_by" id="7EA50EA0-0370-5433-3ABC-AD73EE79DCB3">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:46:34 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="signed_by" id="A2C5BAF4-5F99-9E3F-8D9E-DABD92EC2F1D">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:46:35 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="ongoing" id="50E6C789-E6DB-6390-7DD7-CF65D851C64D">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 00:58:15 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="foreign" id="8D36B0F3-195B-F7AB-ED7E-E8D1996536FE">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 00:59:19 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="programatic_approval" id="D901BAC7-F734-4347-3498-36307E213FB1">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-04-25 01:07:37 UTC</createdTime>
+<generatorID>48F7F8F6-AFB7-12DE-AE26-854494EC391E</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0093192D-486C-8614-A4D6-CDA809E71F82" name="UTBC_contract_id_pk">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:00:09 UTC</createdTime>
+<generatorID>B4A31534-4B60-8A3B-4142-3F79DC7A035F</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C588EE76-BE5A-9C5D-8176-1267087A0FC7</newElementsIDs>
+<usedAttributes>
+<attributeRef>C588EE76-BE5A-9C5D-8176-1267087A0FC7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6C31503A-74BB-7000-D132-64DF0D91C69F" name="UTBC_contract_number U">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:51:49 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+</engineerTo>
+<newElementsIDs>F66B4F3D-F279-5154-D0A2-3D4BBCA0452F</newElementsIDs>
+<usedAttributes>
+<attributeRef>F66B4F3D-F279-5154-D0A2-3D4BBCA0452F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
