@@ -4,7 +4,7 @@
 <createdTime>2014-03-25 21:18:27 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2014-03-25 21:18:42 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,25 +31,12 @@
 <createdTime>2014-03-25 21:19:04 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
-</Attribute>
-<Attribute name="region_id" id="455F4E7C-D3D0-9461-3119-96CC66B0349D">
-<createdBy>tashar</createdBy>
-<createdTime>2014-03-25 21:26:08 UTC</createdTime>
-<generatorID>7EED9406-01C7-D2D9-89D3-FC3BD6107B16</generatorID>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
-</engineerTo>
-<referedAttribute>77919257-6FC4-2D4D-7EE7-E30E719DE142</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -58,7 +45,7 @@
 <createdTime>2014-03-25 21:18:53 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

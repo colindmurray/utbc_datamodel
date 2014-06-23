@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="041D338E-5AC8-C1CE-29D4-044C6424D239" name="UTBC_contract">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="041D338E-5AC8-C1CE-29D4-044C6424D239" name="UTBC_agreements">
 <createdBy>cesar35</createdBy>
 <createdTime>2014-04-12 00:00:09 UTC</createdTime>
 <generatorID>74CDC108-A133-3D91-BB95-CCCEC15915D3</generatorID>
@@ -16,7 +16,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="contract_id" id="C588EE76-BE5A-9C5D-8176-1267087A0FC7">
+<Attribute name="agreement_id" id="C588EE76-BE5A-9C5D-8176-1267087A0FC7">
 <createdBy>cesar35</createdBy>
 <createdTime>2014-04-12 00:00:09 UTC</createdTime>
 <generatorID>4ABC3CE5-D565-856B-18F9-586233EB6346</generatorID>
@@ -24,6 +24,18 @@
 <engineerTo>
 <item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="contract_number" id="F66B4F3D-F279-5154-D0A2-3D4BBCA0452F">
+<createdBy>cesar35</createdBy>
+<createdTime>2014-04-12 00:02:00 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -270,17 +282,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
 </Attribute>
-<Attribute name="contract_number" id="F66B4F3D-F279-5154-D0A2-3D4BBCA0452F">
-<createdBy>cesar35</createdBy>
-<createdTime>2014-04-12 00:02:00 UTC</createdTime>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
 <Attribute name="original_amount" id="54D3BEEF-6869-7464-6D07-949B151FFA04">
 <createdBy>cesar35</createdBy>
 <createdTime>2014-04-12 00:02:00 UTC</createdTime>
@@ -333,20 +334,6 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="note_id" id="D09496BE-DFE4-737F-777C-5BEDEC9B359D">
-<createdBy>cesar35</createdBy>
-<createdTime>2014-04-12 00:28:17 UTC</createdTime>
-<generatorID>EE171877-228B-87EF-6CE3-CA7F427A7BDA</generatorID>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>C6CCDF90-43A1-A592-0E3B-BBB24162D103</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -417,16 +404,90 @@
 <logicalDatatype>LOGDT006</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 </Attribute>
-<Attribute name="programatic_approval" id="D901BAC7-F734-4347-3498-36307E213FB1">
-<createdBy>murra_000</createdBy>
-<createdTime>2014-04-25 01:07:37 UTC</createdTime>
-<generatorID>48F7F8F6-AFB7-12DE-AE26-854494EC391E</generatorID>
+<Attribute name="parent" id="65A317F3-CE06-78D2-36E5-ED4410AF8467">
+<createdBy>tashar</createdBy>
+<createdTime>2014-06-23 20:37:24 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
 <item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</Attribute>
+<Attribute name="version" id="5D4C5DB3-9EF6-C47D-8BE8-92F5E352E598">
+<createdBy>tashar</createdBy>
+<createdTime>2014-06-23 20:44:40 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="type" id="207C51B7-D1EB-5364-8D62-BA32A160533E">
+<createdBy>tashar</createdBy>
+<createdTime>2014-06-23 20:47:23 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="final" id="D8929D44-03E4-8A32-79B1-D0152097987C">
+<createdBy>tashar</createdBy>
+<createdTime>2014-06-23 20:47:45 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="note" id="D0B6ED97-C9DC-F24D-25B9-BF754ABA0A90">
+<createdBy>tashar</createdBy>
+<createdTime>2014-06-23 20:51:49 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="vendor_contact_id" id="0862AA66-5161-04DC-C8C3-3D74E499CD1A">
+<createdBy>tashar</createdBy>
+<createdTime>2014-06-23 21:07:10 UTC</createdTime>
+<generatorID>AE7DFF74-7670-1300-814B-870B8AA35CE8</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
 <referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="approval_id" id="2D6DCA03-5FC6-8896-1317-74EEF7172D6B">
+<createdBy>tashar</createdBy>
+<createdTime>2014-06-23 21:09:15 UTC</createdTime>
+<generatorID>72E37EC1-02EB-4FDC-5BC8-AB7DEC7528DA</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EEC0E894-8610-8594-4CA7-CF090431F369</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

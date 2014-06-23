@@ -4,7 +4,7 @@
 <createdTime>2014-04-25 01:17:07 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2014-04-25 01:17:25 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <use>0</use>
 </Attribute>
@@ -29,7 +29,7 @@
 <createdTime>2014-04-25 01:17:37 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -41,7 +41,7 @@
 <createdTime>2014-04-25 01:17:57 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -49,13 +49,13 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4000</dataTypeSize>
 </Attribute>
-<Attribute name="contract_id" id="2B3A547A-7DAC-57F3-A715-2115C5391FA7">
+<Attribute name="agreement_id" id="2B3A547A-7DAC-57F3-A715-2115C5391FA7">
 <createdBy>murra_000</createdBy>
 <createdTime>2014-04-25 01:19:08 UTC</createdTime>
 <generatorID>58315F99-5194-941B-D948-5D9FC0443EC5</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>C588EE76-BE5A-9C5D-8176-1267087A0FC7</referedAttribute>
@@ -69,7 +69,7 @@
 <generatorID>5C905AAC-DBAB-AC46-1208-F9AC04B92F91</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
@@ -83,7 +83,7 @@
 <generatorID>70118511-699F-F81E-D484-A2C62831A5E6</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</referedAttribute>
@@ -97,7 +97,7 @@
 <generatorID>A76D6073-4701-683B-B86E-B58CDC60ADDC</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>31C6E9B9-B50E-7B24-A0E0-4A8D1E959541</referedAttribute>
@@ -112,7 +112,7 @@
 <createdTime>2014-04-25 01:18:17 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

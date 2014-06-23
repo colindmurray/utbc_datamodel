@@ -35,7 +35,6 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<defaultValue>UT as Tenant</defaultValue>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
@@ -47,6 +46,7 @@
 <valueDef value="Vendor" description=""/>
 <valueDef value="Vendor Landlord" description=""/>
 </listOfValues>
+<defaultValue>UT as Tenant</defaultValue>
 </Attribute>
 <Attribute name="first_name" id="489E64CE-8A26-3B97-39CD-840B6775AF10">
 <createdBy>pcannata</createdBy>
@@ -125,20 +125,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
-</Attribute>
-<Attribute name="region_id" id="FE69AC07-B087-CB05-EA94-542F2356290B">
-<createdBy>tashar</createdBy>
-<createdTime>2014-03-25 21:25:18 UTC</createdTime>
-<generatorID>CE967970-2903-3CCA-9CC8-5C1F4F91D2DC</generatorID>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>77919257-6FC4-2D4D-7EE7-E30E719DE142</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

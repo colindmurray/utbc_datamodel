@@ -104,21 +104,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4000</dataTypeSize>
 </Attribute>
-<Attribute name="amendment_id" id="DF71BADF-668F-9591-D232-24EC6642D022">
-<createdBy>tashar</createdBy>
-<createdTime>2014-03-25 00:12:04 UTC</createdTime>
-<generatorID>3191444C-CDD6-64BB-98E4-048D182B5BAE</generatorID>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="talk_id" id="5EAA55CD-6F4C-6E7A-5DE9-714723CE105A">
+<Attribute name="email_id" id="5EAA55CD-6F4C-6E7A-5DE9-714723CE105A">
 <createdBy>tashar</createdBy>
 <createdTime>2014-04-08 21:39:57 UTC</createdTime>
 <generatorID>48C680C5-EA8A-0DEA-F388-969BAE6F8523</generatorID>
@@ -132,7 +118,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="contract_id" id="8E98C938-E0FA-C28F-3399-3B1317EF8DE0">
+<Attribute name="agreement_id" id="8E98C938-E0FA-C28F-3399-3B1317EF8DE0">
 <createdBy>cesar35</createdBy>
 <createdTime>2014-04-12 00:17:53 UTC</createdTime>
 <generatorID>33871734-CB4D-B491-5FE9-12DE806BF338</generatorID>

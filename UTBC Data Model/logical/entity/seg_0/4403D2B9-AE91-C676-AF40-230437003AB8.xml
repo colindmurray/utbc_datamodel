@@ -4,7 +4,7 @@
 <createdTime>2014-03-25 00:36:46 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2014-03-25 00:37:36 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,22 +31,23 @@
 <createdTime>2014-03-25 00:38:51 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="building_id" id="3364E445-871A-A496-6EC8-60947E0A4D9E">
+<Attribute name="programatic_approver" id="BD95CAC5-B5F7-77C3-09D9-22F35F1D4BF3">
 <createdBy>tashar</createdBy>
-<createdTime>2014-04-08 23:03:02 UTC</createdTime>
-<generatorID>C9382DC4-3C2B-3B37-D60E-32885079490A</generatorID>
+<createdTime>2014-06-23 20:56:46 UTC</createdTime>
+<generatorID>3F7D4BAE-83CF-DE94-BC43-40CED72BEE2E</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
-<referedAttribute>5920BA0B-D2E0-4439-B31A-35C7F56FA068</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -58,7 +59,7 @@
 <createdTime>2014-03-25 00:38:48 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</newElementsIDs>
@@ -71,7 +72,7 @@
 <createdTime>2014-03-25 00:40:25 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="91E715AD-454A-9F49-65CE-72CABA00DC29" value="true"/>
+<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
 </engineerTo>
 <newElementsIDs>D43B5BF4-CEDC-8925-8127-47D4AEEF182A</newElementsIDs>
 <usedAttributes>
