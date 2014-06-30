@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="702FBC2F-988E-3FE2-0928-B5BE3A46BB3A" name="UTBC_email">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>8FA827C9-8FE7-2081-3FF2-7859605BDFF1</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="email_id" id="3BD2EEF1-32EF-E007-6015-AC419AEA26DD">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>BCCCDA1F-0D14-AF60-B339-8CA0B83EBF55</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="BBD8EF4A-48A4-F5A8-05BF-568A8D3198EF">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>54A5782B-4323-D099-5C79-6E5CE9CBF955</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sender_id" id="C4ABBF32-117D-22A4-D9AA-DEA107113FDE">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>8CB41A17-5E49-696E-C49F-43A2D15074B7</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6E726BAD-D9CC-3984-B657-ADD210C40374</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8CE48EB-C750-0BAB-D3C9-FCD9ADDAD6A4" referredColumn="6E726BAD-D9CC-3984-B657-ADD210C40374"/>
+</associations>
+</Column>
+<Column name="receiver_id" id="EF3A3BC4-A836-9FD6-5EAD-11C778B175D5">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>B2C3AB65-3671-DC71-E4B0-EC9584462B52</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6E726BAD-D9CC-3984-B657-ADD210C40374</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55CCA122-59F4-DC87-24F7-A572A5DDB1C3" referredColumn="6E726BAD-D9CC-3984-B657-ADD210C40374"/>
+</associations>
+</Column>
+<Column name="sender_email" id="E5BD50A1-23EF-77B0-DC53-B3F8B53BCA8A">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>1DC741AB-D5BA-64A8-5384-F70253FF59E9</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="recipient_email" id="4F0C8638-9992-6776-9BBA-74A3AD250F83">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>654506A3-BC66-FFBF-B9D0-D56711954CC7</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BB8D66C-E62E-37A8-4FDE-E0913FA517F7" name="UTBC_correspondance_PK">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>3805C44C-A074-4764-B58B-C1A98962B5A2</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BD2EEF1-32EF-E007-6015-AC419AEA26DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E0583A8-F79E-A278-FFC2-68A3796FDE8C" name="Relation_27">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>4CC91F72-9CB6-E125-FA39-1E4D7E28746F</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF3A3BC4-A836-9FD6-5EAD-11C778B175D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DCFB483-B733-6717-C573-CD824C0B1309" name="UTBC_contact_talk">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>6E00CC7B-0FCB-245F-BF5C-C838363249F6</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4ABBF32-117D-22A4-D9AA-DEA107113FDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6DFD7DC-5E29-A9E5-9138-8969A82B7E04" name="UTBC_approvals">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>089E8C08-2550-DE20-C030-939E5BDF2C69</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="approval_id" id="96E16E80-A19E-3B3B-0453-29D07EC6E487">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>EEC0E894-8610-8594-4CA7-CF090431F369</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OGC" id="896BC7CC-2E08-8D25-4DFC-BE908A933416">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>3A4C230C-497B-D257-266C-8D87E8994FB8</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVC" id="59661BF8-3DCA-3457-409A-68021663CDBF">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>5683A498-4C10-4D9F-227C-2C8D8BAA94C3</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOR" id="F67D81DC-D72C-E47A-7CE0-DA14F455F733">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>6969D03A-23D5-4AB3-43BA-19EA5575DF8C</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="docket_date" id="5FF67C7D-F59F-8FFC-30BE-3BE8471AB1EC">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>3A76DA4D-003F-A146-16F9-D5530D4AA6F7</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="docket" id="44936881-BC14-D693-20A3-9F18D4FFB79B">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>E7B910A2-F86B-F976-9C7A-B46DC73800B2</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="system_notes" id="31D15F2D-CACC-3344-AA01-0ADE61877C0B">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>6E9D2448-F07F-AC30-76D3-247649223B73</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5AB9A3CD-F340-E2FB-345B-985CB6646031" name="UTBC_approvals_PK">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:55:03 UTC</createdTime>
+<generatorID>9816A64C-CC73-6CED-F476-941F155C2C36</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96E16E80-A19E-3B3B-0453-29D07EC6E487"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

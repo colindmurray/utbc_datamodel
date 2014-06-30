@@ -4,12 +4,12 @@
 <createdTime>2014-06-23 21:07:10 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <sourcePk>6B7A1E7D-39B3-A6BF-00EA-240023EBDE46</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>false</optionalTarget>
+<optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>

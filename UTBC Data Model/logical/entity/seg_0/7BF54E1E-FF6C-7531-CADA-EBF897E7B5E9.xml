@@ -4,7 +4,7 @@
 <createdTime>2013-03-24 21:46:12 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2013-03-24 21:46:32 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,7 +31,7 @@
 <createdTime>2013-04-11 13:47:14 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -53,7 +53,7 @@
 <createdTime>2013-03-24 21:46:57 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -66,7 +66,7 @@
 <createdTime>2014-03-25 21:27:10 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -79,7 +79,7 @@
 <createdTime>2013-03-25 15:08:35 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -92,7 +92,7 @@
 <createdTime>2013-03-26 18:50:31 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -105,7 +105,7 @@
 <createdTime>2013-03-26 18:49:51 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -118,13 +118,27 @@
 <createdTime>2013-03-28 01:05:41 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="department_id" id="B2A45F88-3642-128B-244F-4634CAFF11DE">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-06-30 19:48:04 UTC</createdTime>
+<generatorID>1C7B091E-02F2-F16A-A1CA-2C26D15A8BFC</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -133,7 +147,7 @@
 <createdTime>2013-03-24 21:46:53 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</newElementsIDs>

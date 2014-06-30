@@ -4,7 +4,7 @@
 <createdTime>2014-03-25 00:36:46 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2014-03-25 00:37:36 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,8 +31,9 @@
 <createdTime>2014-03-25 00:38:51 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -44,7 +45,7 @@
 <generatorID>3F7D4BAE-83CF-DE94-BC43-40CED72BEE2E</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
@@ -59,7 +60,7 @@
 <createdTime>2014-03-25 00:38:48 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</newElementsIDs>
@@ -72,7 +73,7 @@
 <createdTime>2014-03-25 00:40:25 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="6EB954DB-DA58-6DBD-236A-341E0D7E5791" value="true"/>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
 </engineerTo>
 <newElementsIDs>D43B5BF4-CEDC-8925-8127-47D4AEEF182A</newElementsIDs>
 <usedAttributes>
