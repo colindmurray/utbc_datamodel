@@ -6,10 +6,14 @@
    <object objectType="Entity" objectID="4403D2B9-AE91-C676-AF40-230437003AB8" name="UTBC_department" seqName="seg_0"/>
    <object objectType="Entity" objectID="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="UTBC_document" seqName="seg_0"/>
    <object objectType="Entity" objectID="8FA827C9-8FE7-2081-3FF2-7859605BDFF1" name="UTBC_email" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E784467B-15B0-F00A-F47C-32A9418F55E6" name="UTBC_former_name" seqName="seg_0"/>
    <object objectType="Entity" objectID="E007E438-1902-5693-98BE-36673090AC61" name="UTBC_ticklers" seqName="seg_0"/>
    <object objectType="Entity" objectID="6004F8B6-A996-04E8-A2E8-49BDCFEB8C8C" name="UTBC_vendor" seqName="seg_0"/>
    <object objectType="Relation" objectID="1C7B091E-02F2-F16A-A1CA-2C26D15A8BFC" name="Relation_16" seqName="seg_0"/>
    <object objectType="Relation" objectID="693E7D5B-DAD7-D2D5-26F3-65A6B7F59FF1" name="Relation_17" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BEB928E4-507A-699E-8377-087939CD2C4A" name="Relation_20" seqName="seg_0"/>
+   <object objectType="Relation" objectID="86C8DC71-7AC9-721C-930E-FA23655C6463" name="Relation_21" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2607B3EE-6EC5-E500-B0B9-51B8D12F2886" name="Relation_22" seqName="seg_0"/>
    <object objectType="Relation" objectID="4CC91F72-9CB6-E125-FA39-1E4D7E28746F" name="Relation_27" seqName="seg_0"/>
    <object objectType="Relation" objectID="3F7D4BAE-83CF-DE94-BC43-40CED72BEE2E" name="Relation_29" seqName="seg_0"/>
    <object objectType="Relation" objectID="AE7DFF74-7670-1300-814B-870B8AA35CE8" name="Relation_30" seqName="seg_0"/>

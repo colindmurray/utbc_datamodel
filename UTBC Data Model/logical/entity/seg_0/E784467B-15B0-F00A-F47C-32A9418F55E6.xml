@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E784467B-15B0-F00A-F47C-32A9418F55E6" name="UTBC_former_name">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:37:07 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name_id" id="3E91A665-FA0F-C728-E980-42EB5B237AC9">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:37:24 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="vendor_id" id="462CD863-4B90-5B47-6D8E-1501D69722AA">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:52:05 UTC</createdTime>
+<generatorID>86C8DC71-7AC9-721C-930E-FA23655C6463</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>31C6E9B9-B50E-7B24-A0E0-4A8D1E959541</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="department_id" id="08501A73-0891-433E-D330-6017DA1AAA10">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:52:59 UTC</createdTime>
+<generatorID>2607B3EE-6EC5-E500-B0B9-51B8D12F2886</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="F5FFDF3A-88B1-C750-DCA6-9042F9BB479C">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:55:04 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87E4B137-3B8C-41D1-30FE-375F6C95B3D5" name="UTBC_former_name PK">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:37:32 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3E91A665-FA0F-C728-E980-42EB5B237AC9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

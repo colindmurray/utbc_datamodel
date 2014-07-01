@@ -92,6 +92,32 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>256</dataTypeSize>
 </Attribute>
+<Attribute name="email_body" id="D6599BFB-832B-A096-A128-A3D8F583A6CD">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:26:32 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="agreement_id" id="5195D610-FADF-7415-C3DA-32E5AAE0CAD6">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-01 20:26:50 UTC</createdTime>
+<generatorID>BEB928E4-507A-699E-8377-087939CD2C4A</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C588EE76-BE5A-9C5D-8176-1267087A0FC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="3805C44C-A074-4764-B58B-C1A98962B5A2" name="UTBC_correspondance PK">
