@@ -115,19 +115,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
-<Attribute name="faculty_use_of_ut_building" id="AEB255FF-78A8-DCE9-5F1A-2E84035F9D6C">
-<createdBy>cesar35</createdBy>
-<createdTime>2014-04-12 00:00:09 UTC</createdTime>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-</Attribute>
 <Attribute name="renewable" id="EDDD044C-B034-EE8E-A6A8-CF34C82E22B8">
 <createdBy>cesar35</createdBy>
 <createdTime>2014-04-12 00:00:09 UTC</createdTime>
@@ -432,18 +419,6 @@
 <newElementsIDs>C588EE76-BE5A-9C5D-8176-1267087A0FC7</newElementsIDs>
 <usedAttributes>
 <attributeRef>C588EE76-BE5A-9C5D-8176-1267087A0FC7</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="6C31503A-74BB-7000-D132-64DF0D91C69F" name="UTBC_contract_number U">
-<createdBy>cesar35</createdBy>
-<createdTime>2014-04-12 00:51:49 UTC</createdTime>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
-</engineerTo>
-<newElementsIDs>F66B4F3D-F279-5154-D0A2-3D4BBCA0452F</newElementsIDs>
-<usedAttributes>
-<attributeRef>F66B4F3D-F279-5154-D0A2-3D4BBCA0452F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
