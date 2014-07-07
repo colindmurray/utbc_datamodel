@@ -1,0 +1,467 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A67E6AF-674A-2E7E-DFD8-94CE016B9EC4" name="UTBC_agreements">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>041D338E-5AC8-C1CE-29D4-044C6424D239</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="agreement_id" id="E8D06122-B10A-14AD-3856-25B8262B7D76">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>C588EE76-BE5A-9C5D-8176-1267087A0FC7</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contract_number" id="6442638D-D4D3-0970-3AA7-0EA8F2DA8682">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>F66B4F3D-F279-5154-D0A2-3D4BBCA0452F</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="purpose" id="92EA98F4-DE3A-3131-8502-C93C9C97014A">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>E411C458-073E-8D2E-67D3-BFADB743BCE4</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="A005035F-5DB9-2ECD-B2AE-6C40934C44BA">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>4A8CCCD7-5BBB-7101-E5BF-AC092F09617A</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="2D013AC4-30A6-C6E4-D465-16BB57ABB172">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>42C63085-A456-5892-3AD4-D5256EC93953</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="signed_date" id="89CD6C70-7CB9-8D56-DFC7-EE111A10E1A9">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>0012A278-6D44-1615-98FC-308A4E701241</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="current_amount" id="D35FB7BD-4DA0-0149-B01A-FBBE58653009">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>1E409D0E-B3CE-729C-8117-0884F09D0BF8</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="received_date" id="EC3206FA-D3F7-6056-A90C-112F55B2490B">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>14E7624F-48E7-19AA-8466-80AFFCEBFC43</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="renewable" id="7A2E0927-C609-EE40-54A6-7E73E19FBAB8">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>EDDD044C-B034-EE8E-A6A8-CF34C82E22B8</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="9D4FE4DF-1D07-AB4C-2095-B47D4D543E45">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>84185646-AAA5-3F22-C6C9-40E0F67692C5</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_type" id="9D78048A-5928-272F-0721-4511C74C9AD4">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>340AD7C7-BBE2-430C-9431-64F873D26AC1</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="account_type" id="F145665F-DCE6-F078-E75A-3F1BB7F777E5">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>AB2C2A3C-95FE-3BAE-A599-76F8B5BEE66E</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_contact_date" id="83E167B3-26BA-92FB-E966-1D8AFCB74690">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>673150D7-5F7D-E085-D8EA-B1CE914FF71F</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="logged_by" id="CD60F599-EEC4-EB0F-94C0-AEAAFC772C61">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>16599505-D1D4-1C68-6C0E-0DB42171641A</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="original_amount" id="6E37DBAF-58CD-B739-768B-2D6BACC0578D">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>54D3BEEF-6869-7464-6D07-949B151FFA04</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="department_id" id="478DC53C-DA4D-50FC-B6B8-621346A33D60">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>1D1483A1-46EC-C0D9-CF95-FB72C830306B</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0F7510E2-0090-8A9F-4017-9E4A2068391A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93E32FEF-3F4C-90DF-DC42-043C9803D351" referredColumn="0F7510E2-0090-8A9F-4017-9E4A2068391A"/>
+</associations>
+</Column>
+<Column name="vendor_id" id="8044D728-8231-50FC-4577-398C44FE6B8B">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>3B0EE9CC-006B-5D21-41D7-0FFA7B9A4271</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>FDC0E0F7-15D7-5B35-532C-D67BDE239849</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="287D6CA2-E861-B82C-09D6-43CB91B4625E" referredColumn="FDC0E0F7-15D7-5B35-532C-D67BDE239849"/>
+</associations>
+</Column>
+<Column name="dept_contact_id" id="C2A3ED02-3FC6-7053-C09A-C569CFE7D05D">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>D3269A89-B84B-B83C-8E96-9B2BA45F13BC</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>80FFCF1D-8FD5-18B1-221E-9358AF8EF308</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B28D5B2-2239-D77C-7D64-B03932935407" referredColumn="80FFCF1D-8FD5-18B1-221E-9358AF8EF308"/>
+</associations>
+</Column>
+<Column name="dept_contact_admin_id" id="C361D7DF-3A38-3B38-46B4-BF16F441DE06">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>C0EFA389-9AC8-BF0F-CB77-0C207B5901FF</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>80FFCF1D-8FD5-18B1-221E-9358AF8EF308</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18133F84-7CC2-0661-4943-AF9FB739B8ED" referredColumn="80FFCF1D-8FD5-18B1-221E-9358AF8EF308"/>
+</associations>
+</Column>
+<Column name="reviewed_by" id="BF8D39BC-3755-8654-C657-06A3C52ECB53">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>7EA50EA0-0370-5433-3ABC-AD73EE79DCB3</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="signed_by" id="5B5F6398-94B1-8712-EE79-9C100FEA2275">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>A2C5BAF4-5F99-9E3F-8D9E-DABD92EC2F1D</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ongoing" id="6F8BFF13-307A-6B0C-F5FC-BEC8914B5B95">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>50E6C789-E6DB-6390-7DD7-CF65D851C64D</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="foreign" id="4078E4C1-5961-22C2-7FA2-DE69B620D32E">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>8D36B0F3-195B-F7AB-ED7E-E8D1996536FE</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parent" id="A8A095C6-69AB-D9BB-763C-BCB88D09A0AB">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>65A317F3-CE06-78D2-36E5-ED4410AF8467</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="version" id="A1A53CBF-B5FA-ECBE-15F9-23AFAE230626">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>5D4C5DB3-9EF6-C47D-8BE8-92F5E352E598</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="4D07A63D-D6CF-027D-BAF4-2F7DD0BA07C0">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>207C51B7-D1EB-5364-8D62-BA32A160533E</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="final" id="788910AB-6332-8330-F5FF-8B99DC6839E9">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>D8929D44-03E4-8A32-79B1-D0152097987C</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="CEC1C552-D7F8-A13C-92F7-22D4D2E2B13F">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>D0B6ED97-C9DC-F24D-25B9-BF754ABA0A90</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vendor_contact_id" id="AE4F647B-A94D-8C63-0A67-C3B62DBB77A2">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>0862AA66-5161-04DC-C8C3-3D74E499CD1A</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>80FFCF1D-8FD5-18B1-221E-9358AF8EF308</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD6593E4-56B1-5832-68A8-3D195E6C5AF9" referredColumn="80FFCF1D-8FD5-18B1-221E-9358AF8EF308"/>
+</associations>
+</Column>
+<Column name="approval_id" id="81AAB909-41AA-4377-4860-9430F9507732">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>2D6DCA03-5FC6-8896-1317-74EEF7172D6B</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>8AFF146A-F628-E4E0-AD54-A72C81530020</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E48B546-0596-565B-DC0D-C53F56C8714D" referredColumn="8AFF146A-F628-E4E0-AD54-A72C81530020"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F1D7AA6-7941-35CD-19BB-F3767B9A6025" name="UTBC_contract_id_pk">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>0093192D-486C-8614-A4D6-CDA809E71F82</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8D06122-B10A-14AD-3856-25B8262B7D76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A99490C0-DEA1-7556-CBA8-DBCE5077F217" name="Relation_30">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>AE7DFF74-7670-1300-814B-870B8AA35CE8</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE4F647B-A94D-8C63-0A67-C3B62DBB77A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF51E6CA-F8AF-35C6-F2D1-6864FF8A51D7" name="Relation_31">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>72E37EC1-02EB-4FDC-5BC8-AB7DEC7528DA</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81AAB909-41AA-4377-4860-9430F9507732"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D1831E7-378E-51BC-52DA-A3A117D5D09F" name="UTBC_department_contract">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>AD6DA293-E9A1-368D-D419-7AB4DFEC2951</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="478DC53C-DA4D-50FC-B6B8-621346A33D60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA86A560-DE53-29D9-C64A-157F45D01AF8" name="UTBC_deptcontact_contractv1">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>F51D377B-A58D-0172-B161-87E3692039CB</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C361D7DF-3A38-3B38-46B4-BF16F441DE06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8BC5E52-8572-0580-F830-5830FADAC153" name="UTBC_deptcontact_contractv2">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>474A1B3B-8AB6-3385-125A-18718BEE4257</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2A3ED02-3FC6-7053-C09A-C569CFE7D05D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20A962EE-96AA-B07D-F0EC-D5482C24E17E" name="UTBC_vendor_contract">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>AB12CC3C-5117-2BC1-B86D-C2CD84D06703</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8044D728-8231-50FC-4577-398C44FE6B8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

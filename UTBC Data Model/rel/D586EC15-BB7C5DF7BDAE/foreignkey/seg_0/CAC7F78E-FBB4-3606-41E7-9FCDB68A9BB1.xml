@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CAC7F78E-FBB4-3606-41E7-9FCDB68A9BB1" name="UTBC_tickler_contract">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-07 19:30:57 UTC</createdTime>
+<generatorID>58315F99-5194-941B-D948-5D9FC0443EC5</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<containerWithKeyObject>51BA264C-EC4D-541F-FCB6-BFE95E5C0049</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>F0F04283-DFE4-25AE-2FD9-03C480A7B0DA</localFKIndex>
+<keyObject>0F1D7AA6-7941-35CD-19BB-F3767B9A6025</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
