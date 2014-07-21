@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EED3410F-21C3-BCBD-F23D-74483CC49608" name="UTBC_Agree_Trig">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:25:49 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="agree_trig_id" id="005D2D0C-CDBF-C894-52A1-E126A67CC8E1">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:26:04 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="trigger_id" id="2A253832-C5B9-9D3C-66EF-285CA609581A">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:26:49 UTC</createdTime>
+<generatorID>8CF20041-87B6-C022-2232-701F503D9646</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<referedAttribute>115E020B-B982-CEAE-CD75-0EF1B68D5E46</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="agreement_id" id="69864E57-3AA2-E50C-BCEC-001CED6F84BD">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:26:59 UTC</createdTime>
+<generatorID>E47E22DA-04CC-4622-FEE3-A0DDAF8F678F</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<referedAttribute>C588EE76-BE5A-9C5D-8176-1267087A0FC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="565FD553-DA69-926A-BFC5-1D760FB8C8D1" name="UTBC_Agree_Trig PK">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:26:23 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>005D2D0C-CDBF-C894-52A1-E126A67CC8E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

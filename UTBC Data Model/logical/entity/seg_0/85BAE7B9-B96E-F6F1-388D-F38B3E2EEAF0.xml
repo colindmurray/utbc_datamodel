@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85BAE7B9-B96E-F6F1-388D-F38B3E2EEAF0" name="UTBC_Agree_App">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:32:32 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="agree_app_id" id="DA65982D-FCDB-8FA2-EECC-8A683B062623">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:32:57 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="parent" id="680500CD-4FB1-24F5-ADB9-A02AA45316E0">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:33:49 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="complete" id="915072BA-6FEB-F0EF-F11E-2E5668456631">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:34:02 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="agreement_id" id="BC237D90-4E6A-F03F-B794-CCE8209A6E50">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:34:34 UTC</createdTime>
+<generatorID>F173CE4C-4A3F-CDEE-5F33-EBA56755231C</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<referedAttribute>C588EE76-BE5A-9C5D-8176-1267087A0FC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="approval_id" id="86B7835D-8205-3D3E-9A1B-27EF6C7BF437">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:34:42 UTC</createdTime>
+<generatorID>8FF6B81C-E980-C748-F018-DFF0CB01AD03</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<referedAttribute>EEC0E894-8610-8594-4CA7-CF090431F369</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="585F05E5-C28F-44BC-ADF8-A4256864A63D" name="UTBC_Agree_App PK">
+<createdBy>Alex</createdBy>
+<createdTime>2014-07-21 20:33:46 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA65982D-FCDB-8FA2-EECC-8A683B062623</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
