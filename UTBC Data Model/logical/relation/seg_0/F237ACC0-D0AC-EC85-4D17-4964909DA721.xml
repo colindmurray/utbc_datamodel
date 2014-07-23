@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UTBC_approval_tickler" directorySegmentName="seg_0" id="F237ACC0-D0AC-EC85-4D17-4964909DA721">
+<createdBy>tashar</createdBy>
+<createdTime>2014-07-23 20:57:55 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<sourcePk>585F05E5-C28F-44BC-ADF8-A4256864A63D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>85BAE7B9-B96E-F6F1-388D-F38B3E2EEAF0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E007E438-1902-5693-98BE-36673090AC61</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -391,20 +391,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="approval_id" id="2D6DCA03-5FC6-8896-1317-74EEF7172D6B">
-<createdBy>tashar</createdBy>
-<createdTime>2014-06-23 21:09:15 UTC</createdTime>
-<generatorID>72E37EC1-02EB-4FDC-5BC8-AB7DEC7528DA</generatorID>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>EEC0E894-8610-8594-4CA7-CF090431F369</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0093192D-486C-8614-A4D6-CDA809E71F82" name="UTBC_contract_id_pk">
