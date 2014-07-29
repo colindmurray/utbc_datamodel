@@ -391,6 +391,34 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute name="ven_former_name_id" id="C1F45D74-B80E-C6E4-B87D-9B5C96A69FB4">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:48:00 UTC</createdTime>
+<generatorID>280B5869-56A9-8F5F-2758-6A5410B75C2F</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3E91A665-FA0F-C728-E980-42EB5B237AC9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="dept_former_name_id" id="6A98EF76-28A0-AB64-08EF-8449CF9FB082">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:48:12 UTC</createdTime>
+<generatorID>2E303067-6B13-A0C4-1F03-50E06DAC964C</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3E91A665-FA0F-C728-E980-42EB5B237AC9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0093192D-486C-8614-A4D6-CDA809E71F82" name="UTBC_contract_id_pk">

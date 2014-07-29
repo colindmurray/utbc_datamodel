@@ -59,6 +59,7 @@
 <engineerTo>
 <item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>C588EE76-BE5A-9C5D-8176-1267087A0FC7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,6 +73,7 @@
 <engineerTo>
 <item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>EEC0E894-8610-8594-4CA7-CF090431F369</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

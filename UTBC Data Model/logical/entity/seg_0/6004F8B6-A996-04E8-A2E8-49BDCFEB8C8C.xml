@@ -4,7 +4,7 @@
 <createdTime>2014-03-25 21:18:27 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,24 +20,25 @@
 <createdTime>2014-03-25 21:18:42 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="name" id="045BC827-63CD-7895-6AF8-EDE4505DB35A">
-<createdBy>tashar</createdBy>
-<createdTime>2014-03-25 21:19:04 UTC</createdTime>
+<Attribute name="current_name_id" id="C0E1C66C-774B-1C30-6082-93AE56AA4FEC">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:49:04 UTC</createdTime>
+<generatorID>21BADBB0-C68A-83EF-F96D-8A54C990E0FE</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<referedAttribute>3E91A665-FA0F-C728-E980-42EB5B237AC9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -46,7 +47,7 @@
 <createdTime>2014-03-25 21:18:53 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

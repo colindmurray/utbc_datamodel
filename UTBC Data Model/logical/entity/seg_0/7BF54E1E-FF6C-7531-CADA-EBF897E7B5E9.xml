@@ -4,7 +4,7 @@
 <createdTime>2013-03-24 21:46:12 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2013-03-24 21:46:32 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,10 +31,11 @@
 <createdTime>2013-04-11 13:47:14 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
+<defaultValue>UT as Tenant</defaultValue>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
@@ -46,14 +47,13 @@
 <valueDef value="Vendor" description=""/>
 <valueDef value="Vendor Landlord" description=""/>
 </listOfValues>
-<defaultValue>UT as Tenant</defaultValue>
 </Attribute>
 <Attribute name="first_name" id="489E64CE-8A26-3B97-39CD-840B6775AF10">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-24 21:46:57 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -66,7 +66,7 @@
 <createdTime>2014-03-25 21:27:10 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -74,12 +74,51 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 </Attribute>
+<Attribute name="street_address" id="EBE6701C-1995-878A-E0FF-909FD4ABF7A3">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:51:38 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+</Attribute>
+<Attribute name="city" id="376C34C8-F2BE-FDD8-03C0-865F65EF5D9A">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:51:22 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="state" id="DFCC27B8-4E19-770F-2A79-C3C4118AE68A">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:51:00 UTC</createdTime>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
 <Attribute name="title" id="24F99BDF-3A65-1B31-289B-0D78EB7F95AD">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-25 15:08:35 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -92,7 +131,7 @@
 <createdTime>2013-03-26 18:50:31 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -105,7 +144,7 @@
 <createdTime>2013-03-26 18:49:51 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -118,7 +157,7 @@
 <createdTime>2013-03-28 01:05:41 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -132,7 +171,7 @@
 <generatorID>1C7B091E-02F2-F16A-A1CA-2C26D15A8BFC</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</referedAttribute>
@@ -145,13 +184,27 @@
 <createdTime>2014-07-01 20:38:08 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="vendor_id" id="B1E98868-6471-CE41-2584-66DF91C3153B">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:50:37 UTC</createdTime>
+<generatorID>9596C38F-2F12-3F08-EA91-B2B4DFC94A2F</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>31C6E9B9-B50E-7B24-A0E0-4A8D1E959541</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -160,7 +213,7 @@
 <createdTime>2013-03-24 21:46:53 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</newElementsIDs>

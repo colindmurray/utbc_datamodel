@@ -4,7 +4,7 @@
 <createdTime>2014-03-25 00:36:46 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,24 +20,11 @@
 <createdTime>2014-03-25 00:37:36 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="name" id="D43B5BF4-CEDC-8925-8127-47D4AEEF182A">
-<createdBy>tashar</createdBy>
-<createdTime>2014-03-25 00:38:51 UTC</createdTime>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
 </Attribute>
 <Attribute name="programatic_approver" id="BD95CAC5-B5F7-77C3-09D9-22F35F1D4BF3">
 <createdBy>tashar</createdBy>
@@ -45,13 +32,26 @@
 <generatorID>3F7D4BAE-83CF-DE94-BC43-40CED72BEE2E</generatorID>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="current_name_id" id="39A31F52-4963-C40D-0F4E-125225394789">
+<createdBy>murra_000</createdBy>
+<createdTime>2014-07-29 19:49:50 UTC</createdTime>
+<generatorID>F85D62A4-31E6-EC66-8DD7-4A927A06EF50</generatorID>
+<ownerDesignName>UTBC Data Model</ownerDesignName>
+<engineerTo>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
+</engineerTo>
+<referedAttribute>3E91A665-FA0F-C728-E980-42EB5B237AC9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -60,24 +60,12 @@
 <createdTime>2014-03-25 00:38:48 UTC</createdTime>
 <ownerDesignName>UTBC Data Model</ownerDesignName>
 <engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
+<item key="D586EC15-7E39-E52F-DA18-BB7C5DF7BDAE" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</newElementsIDs>
 <usedAttributes>
 <attributeRef>8E42DEA7-AA17-4DBB-1ED8-128992FC8C61</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="17B21DB0-BBCA-2A18-8116-E2D1FB28A8E9" name="UTBC_name U">
-<createdBy>tashar</createdBy>
-<createdTime>2014-03-25 00:40:25 UTC</createdTime>
-<ownerDesignName>UTBC Data Model</ownerDesignName>
-<engineerTo>
-<item key="5790F30A-6E4B-4A98-5D83-88CADAE08DC8" value="true"/>
-</engineerTo>
-<newElementsIDs>D43B5BF4-CEDC-8925-8127-47D4AEEF182A</newElementsIDs>
-<usedAttributes>
-<attributeRef>D43B5BF4-CEDC-8925-8127-47D4AEEF182A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
