@@ -1,0 +1,20 @@
+\BOOKMARK [0][-]{chapter.1}{Data model}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Contract Table}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{UTBC\137approvals and UTBC\137Agree\137App Tables}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{UTBC\137triggers and UTBC\137Agree\137Trig Tables}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Application}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Home Page}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Agreements Home Page}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Agreements Tree}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Agreements Search Bar}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.3}{Agreements Form}{section.2.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Agreements Details Page}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Purpose region}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.2}{Related Region}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.3}{Notes Region}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.4}{Approvals Region}{section.2.3}% 15
+\BOOKMARK [1][-]{section.2.4}{Other Forms}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Vendor Form}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{Department Form}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.3}{Tickler Form}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.4}{Document Form}{section.2.4}% 20

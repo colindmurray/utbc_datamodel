@@ -1,0 +1,101 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[margins=1in]{geometry}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\linespread{1.5}
+
+\lstdefinelanguage{SQL}{
+	keywords ={,SELECT,FROM,JOIN,ON,WHERE,GROUP BY,AS,AND,OR,BETWEEN,UPDATE,SET,INTO,}
+	sensitive = true,
+	keywordsstyle=\color{blue},
+	ndkeywords={,UTBC_ticklers, UTBC_vendor, UTBC_former_name, UTBC_department, UTBC_approvals, UTBC_Agree_App, UTBC_Triggers, UTBC_Agree_Trig, UTBC_agreement, UTBC_department, UTBC_contact, UTBC_email, UTBC_document},
+	ndkeywordstyle=\color{red}\bfseries,
+	stringstyle = \ttfamily
+}
+
+\lstset{
+	language=SQL,
+	extended chars = true,
+	basicstle = \ttfamily,
+	number = left,
+	frame = leftline
+}
+
+\begin{document}
+
+\title{\bfseries UT Business Contracts Application Documentation}
+
+\author{
+	Coling Murray (Team Leader)
+	\and
+	Calvin Aisenbrey
+	\and
+	Alex Landaverde
+	\and
+	Chris Metcalf
+	\and
+	Ashley Ng
+}
+
+\maketitle
+
+\begin{abstract}
+Put abstract here
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\begin{image}
+\centering
+\includegraphics[height = 4.5in, angle = 90]{UTBC_model}
+\end{image}
+
+
+
+\chapter{Data model}
+
+\section{Contract Table}
+
+\section{UTBC\_approvals and UTBC\_Agree\_App Tables}
+
+\section{UTBC\_triggers and UTBC\_Agree\_Trig Tables}
+
+\chapter{Application}
+
+\section{Home Page}
+
+\section{Agreements Home Page}
+
+\subsection{Agreements Tree}
+
+\subsection{Agreements Search Bar}
+
+\subsection{Agreements Form}
+
+\section{Agreements Details Page}
+
+\subsection{Purpose region}
+
+\subsection{Related Region}
+
+\subsection{Notes Region}
+
+\subsection{Approvals Region}
+
+\section{Other Forms}
+
+\subsection{Vendor Form}
+
+\subsection{Department Form}
+
+\subsection{Tickler Form}
+
+\subsection{Document Form}
+
+\end{document}

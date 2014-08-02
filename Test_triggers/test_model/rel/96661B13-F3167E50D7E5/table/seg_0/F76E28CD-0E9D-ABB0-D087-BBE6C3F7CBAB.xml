@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F76E28CD-0E9D-ABB0-D087-BBE6C3F7CBAB" name="TEST_agreement">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>36186E82-F7DE-1C37-1B16-2678A5894430</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="agreement_id" id="6C48E18A-C918-FAB1-200D-E5DBF94640CA">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>5675354E-DC1B-5B87-2A20-1809480F3827</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEST_department_id" id="60519787-52A8-C014-4899-A3C691D7679D">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>F90EBDE0-FA87-16C4-3F88-C97B98A27D73</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>AD2576ED-C232-9786-569A-BA51BE99A0E6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1B23451-1414-15B7-FA74-B934EB7C3309" referredColumn="AD2576ED-C232-9786-569A-BA51BE99A0E6"/>
+</associations>
+</Column>
+<Column name="TEST_vendor_id" id="C00B0B07-3105-C863-4092-05304CAB4663">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>BD0FC963-1139-9C06-4B85-EF105DF0E716</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>29BC07D5-D1BB-C073-DE76-98FBA505BC12</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EDF7232-4419-F333-EF69-669DB4193B76" referredColumn="29BC07D5-D1BB-C073-DE76-98FBA505BC12"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B620E03-0E6A-0D44-859F-AC05F688F3B2" name="TEST_agreement_PK">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>A654299A-6C73-86B5-9F05-58B618ED55AE</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C48E18A-C918-FAB1-200D-E5DBF94640CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AAD0096-140F-8CA7-74D2-E7002C72F7EB" name="TEST_agreement_department_FK">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>3B50CD36-A171-ACB0-AAA4-438E61318819</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60519787-52A8-C014-4899-A3C691D7679D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2826217E-DFA6-583B-9FF7-F6FAFB240DF2" name="TEST_agreement_vendor_FK">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>C75DF77F-791B-9891-C318-649939E6C752</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C00B0B07-3105-C863-4092-05304CAB4663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

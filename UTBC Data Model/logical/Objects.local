@@ -1,43 +1,43 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="85BAE7B9-B96E-F6F1-388D-F38B3E2EEAF0" name="UTBC_Agree_App" seqName="seg_0"/>
-   <object objectType="Entity" objectID="EED3410F-21C3-BCBD-F23D-74483CC49608" name="UTBC_Agree_Trig" seqName="seg_0"/>
-   <object objectType="Entity" objectID="3D635C72-D43B-0B6D-4975-51F6C1672AD5" name="UTBC_Triggers" seqName="seg_0"/>
    <object objectType="Entity" objectID="041D338E-5AC8-C1CE-29D4-044C6424D239" name="UTBC_agreements" seqName="seg_0"/>
    <object objectType="Entity" objectID="089E8C08-2550-DE20-C030-939E5BDF2C69" name="UTBC_approvals" seqName="seg_0"/>
-   <object objectType="Entity" objectID="7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9" name="UTBC_contact" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3D635C72-D43B-0B6D-4975-51F6C1672AD5" name="UTBC_Triggers" seqName="seg_0"/>
    <object objectType="Entity" objectID="4403D2B9-AE91-C676-AF40-230437003AB8" name="UTBC_department" seqName="seg_0"/>
-   <object objectType="Entity" objectID="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="UTBC_document" seqName="seg_0"/>
-   <object objectType="Entity" objectID="8FA827C9-8FE7-2081-3FF2-7859605BDFF1" name="UTBC_email" seqName="seg_0"/>
-   <object objectType="Entity" objectID="E784467B-15B0-F00A-F47C-32A9418F55E6" name="UTBC_former_name" seqName="seg_0"/>
-   <object objectType="Entity" objectID="E007E438-1902-5693-98BE-36673090AC61" name="UTBC_ticklers" seqName="seg_0"/>
    <object objectType="Entity" objectID="6004F8B6-A996-04E8-A2E8-49BDCFEB8C8C" name="UTBC_vendor" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9" name="UTBC_contact" seqName="seg_0"/>
+   <object objectType="Entity" objectID="85BAE7B9-B96E-F6F1-388D-F38B3E2EEAF0" name="UTBC_Agree_App" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8FA827C9-8FE7-2081-3FF2-7859605BDFF1" name="UTBC_email" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="UTBC_document" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E007E438-1902-5693-98BE-36673090AC61" name="UTBC_ticklers" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E784467B-15B0-F00A-F47C-32A9418F55E6" name="UTBC_former_name" seqName="seg_0"/>
+   <object objectType="Entity" objectID="EED3410F-21C3-BCBD-F23D-74483CC49608" name="UTBC_Agree_Trig" seqName="seg_0"/>
    <object objectType="Relation" objectID="1C7B091E-02F2-F16A-A1CA-2C26D15A8BFC" name="Relation_16" seqName="seg_0"/>
-   <object objectType="Relation" objectID="BEB928E4-507A-699E-8377-087939CD2C4A" name="Relation_20" seqName="seg_0"/>
-   <object objectType="Relation" objectID="86C8DC71-7AC9-721C-930E-FA23655C6463" name="Relation_21" seqName="seg_0"/>
+   <object objectType="Relation" objectID="21BADBB0-C68A-83EF-F96D-8A54C990E0FE" name="ven_cur_name" seqName="seg_0"/>
    <object objectType="Relation" objectID="2607B3EE-6EC5-E500-B0B9-51B8D12F2886" name="Relation_22" seqName="seg_0"/>
-   <object objectType="Relation" objectID="8CF20041-87B6-C022-2232-701F503D9646" name="Relation_25" seqName="seg_0"/>
-   <object objectType="Relation" objectID="E47E22DA-04CC-4622-FEE3-A0DDAF8F678F" name="Relation_26" seqName="seg_0"/>
-   <object objectType="Relation" objectID="4CC91F72-9CB6-E125-FA39-1E4D7E28746F" name="Relation_27" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F173CE4C-4A3F-CDEE-5F33-EBA56755231C" name="Relation_28" seqName="seg_0"/>
-   <object objectType="Relation" objectID="3F7D4BAE-83CF-DE94-BC43-40CED72BEE2E" name="Relation_29" seqName="seg_0"/>
-   <object objectType="Relation" objectID="AE7DFF74-7670-1300-814B-870B8AA35CE8" name="Relation_30" seqName="seg_0"/>
-   <object objectType="Relation" objectID="8FF6B81C-E980-C748-F018-DFF0CB01AD03" name="Relation_32" seqName="seg_0"/>
    <object objectType="Relation" objectID="280B5869-56A9-8F5F-2758-6A5410B75C2F" name="Relation_34" seqName="seg_0"/>
    <object objectType="Relation" objectID="2E303067-6B13-A0C4-1F03-50E06DAC964C" name="Relation_35" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F85D62A4-31E6-EC66-8DD7-4A927A06EF50" name="Relation_37" seqName="seg_0"/>
-   <object objectType="Relation" objectID="9596C38F-2F12-3F08-EA91-B2B4DFC94A2F" name="Relation_38" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F237ACC0-D0AC-EC85-4D17-4964909DA721" name="UTBC_approval_tickler" seqName="seg_0"/>
-   <object objectType="Relation" objectID="6E00CC7B-0FCB-245F-BF5C-C838363249F6" name="UTBC_contact_talk" seqName="seg_0"/>
-   <object objectType="Relation" objectID="5C905AAC-DBAB-AC46-1208-F9AC04B92F91" name="UTBC_contact_tickler" seqName="seg_0"/>
    <object objectType="Relation" objectID="33871734-CB4D-B491-5FE9-12DE806BF338" name="UTBC_contract_document" seqName="seg_0"/>
-   <object objectType="Relation" objectID="AD6DA293-E9A1-368D-D419-7AB4DFEC2951" name="UTBC_department_contract" seqName="seg_0"/>
-   <object objectType="Relation" objectID="70118511-699F-F81E-D484-A2C62831A5E6" name="UTBC_department_tickler" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F51D377B-A58D-0172-B161-87E3692039CB" name="UTBC_deptcontact_contractv1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3F7D4BAE-83CF-DE94-BC43-40CED72BEE2E" name="Relation_29" seqName="seg_0"/>
    <object objectType="Relation" objectID="474A1B3B-8AB6-3385-125A-18718BEE4257" name="UTBC_deptcontact_contractv2" seqName="seg_0"/>
    <object objectType="Relation" objectID="48C680C5-EA8A-0DEA-F388-969BAE6F8523" name="UTBC_document_talk" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4CC91F72-9CB6-E125-FA39-1E4D7E28746F" name="Relation_27" seqName="seg_0"/>
    <object objectType="Relation" objectID="58315F99-5194-941B-D948-5D9FC0443EC5" name="UTBC_tickler_contract" seqName="seg_0"/>
-   <object objectType="Relation" objectID="AB12CC3C-5117-2BC1-B86D-C2CD84D06703" name="UTBC_vendor_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5C905AAC-DBAB-AC46-1208-F9AC04B92F91" name="UTBC_contact_tickler" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6E00CC7B-0FCB-245F-BF5C-C838363249F6" name="UTBC_contact_talk" seqName="seg_0"/>
+   <object objectType="Relation" objectID="70118511-699F-F81E-D484-A2C62831A5E6" name="UTBC_department_tickler" seqName="seg_0"/>
+   <object objectType="Relation" objectID="86C8DC71-7AC9-721C-930E-FA23655C6463" name="Relation_21" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8CF20041-87B6-C022-2232-701F503D9646" name="Relation_25" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8FF6B81C-E980-C748-F018-DFF0CB01AD03" name="Relation_32" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9596C38F-2F12-3F08-EA91-B2B4DFC94A2F" name="Relation_38" seqName="seg_0"/>
    <object objectType="Relation" objectID="A76D6073-4701-683B-B86E-B58CDC60ADDC" name="UTBC_vendor_tickler" seqName="seg_0"/>
-   <object objectType="Relation" objectID="21BADBB0-C68A-83EF-F96D-8A54C990E0FE" name="ven_cur_name" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AB12CC3C-5117-2BC1-B86D-C2CD84D06703" name="UTBC_vendor_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AD6DA293-E9A1-368D-D419-7AB4DFEC2951" name="UTBC_department_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AE7DFF74-7670-1300-814B-870B8AA35CE8" name="Relation_30" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BEB928E4-507A-699E-8377-087939CD2C4A" name="Relation_20" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E47E22DA-04CC-4622-FEE3-A0DDAF8F678F" name="Relation_26" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F173CE4C-4A3F-CDEE-5F33-EBA56755231C" name="Relation_28" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F237ACC0-D0AC-EC85-4D17-4964909DA721" name="UTBC_approval_tickler" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F51D377B-A58D-0172-B161-87E3692039CB" name="UTBC_deptcontact_contractv1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F85D62A4-31E6-EC66-8DD7-4A927A06EF50" name="Relation_37" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

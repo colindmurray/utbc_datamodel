@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40F28872-32FF-C5DD-5E2E-1A8143A53D67" name="TEST_department">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>C89177B3-C107-64D9-A069-4C91896FA6E7</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="department_id" id="AD2576ED-C232-9786-569A-BA51BE99A0E6">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>FF747271-C68E-E861-C05F-E75B508F317E</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="04D36705-17ED-7764-28E5-5E572B8C8E5B">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>0E7430CA-4EA7-0DE6-BA8C-E5E6A0432C1A</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="273F5A32-44A3-76AC-4B39-7B779C3D4FE0" name="TEST_department_PK">
+<createdBy>ashleyng</createdBy>
+<createdTime>2014-07-21 16:52:27 UTC</createdTime>
+<generatorID>E6A6B884-48B3-01F2-99EE-18D2A5AD2AB6</generatorID>
+<ownerDesignName>test_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD2576ED-C232-9786-569A-BA51BE99A0E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
