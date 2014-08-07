@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 AUG 2014 15:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 AUG 2014 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -86,25 +86,23 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks15
-
-
-/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty:994: Package
- keyval Error: margins undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.994 \ProcessOptionsKV[p]{Gm}
-                              %
-? 
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -295,15 +293,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=556.47656pt
-* \oddsidemargin=19.8752pt
-* \evensidemargin=19.8752pt
-* \topmargin=-13.87262pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -370,7 +368,7 @@ been already used, duplicate ignored
 l.50 \newpage
               [1
 
-] [2]
+]
 
 ./documentation.tex:52: LaTeX Error: Environment image undefined.
 
@@ -381,7 +379,7 @@ Type  H <return>  for immediate help.
 l.52 \begin{image}
                   
 ? 
-<UTBC_model.png, id=134, 1254.6875pt x 710.655pt>
+<UTBC_model.png, id=130, 1254.6875pt x 710.655pt>
 File: UTBC_model.png Graphic file (type png)
  <use UTBC_model.png>
 Package pdftex.def Info: UTBC_model.png used on input line 54.
@@ -397,23 +395,19 @@ Type  H <return>  for immediate help.
 l.55 \end{image}
                 
 ? 
-
-Overfull \vbox (17.71922pt too high) has occurred while \output is active []
-
-
-[3 <./UTBC_model.png>]
+[2 <./UTBC_model.png>]
 Chapter 1.
-[4
+[3
 
 ]
 Chapter 2.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 72.
-[5
+[4
 
-] [6] [7]
+] [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
- [8]
+ [6] [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./documentation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
@@ -423,22 +417,22 @@ Package rerunfilecheck Info: File `documentation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 6962 strings out of 493315
- 103758 string characters out of 6137904
- 203862 words of memory out of 5000000
- 10298 multiletter control sequences out of 15000+600000
+ 7348 strings out of 493315
+ 107968 string characters out of 6137904
+ 214310 words of memory out of 5000000
+ 10683 multiletter control sequences out of 15000+600000
  9582 words of font info for 34 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,6n,40p,870b,921s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,40p,870b,1649s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on documentation.pdf (10 pages, 385062 bytes).
+Output written on documentation.pdf (9 pages, 384652 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

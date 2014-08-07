@@ -1,8 +1,8 @@
 \documentclass{report}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage[margins=1in]{geometry}
-\usepackage{color}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{listings}
 
@@ -12,14 +12,14 @@
 	keywords = {,SELECT ,FROM,JOIN,ON,WHERE, GROUP BY, AS, AND, OR, BETWEEN, UPDATE, SET, INTO,INSERT,insert,}
 	sensitive=false,
 	keywordstyle = \color{blue},
-	ndkeywords={OC3_comm, OC3_staff, OC3_notes, OC3_contact, OC3_contract, OC3_turningform, OC3_item},
+	ndkeywords={}
 	ndkeywordstyle = \color{red}\bfseries,
 	stringstyle = \ttfamily
 }
 \lstset{
 	language = SQL,
 	extendedchars = true,
-	basicstyle = \ttfamily,
+	basicstyle = \color{red}\ttfamily,
 	numbers = left,
 	frame = leftline
 	}
@@ -119,7 +119,7 @@ The documents form uses a file drop plug-in that was downloaded at apex-plugin.c
 \begin{lstlisting}[caption = PL/SQL on filedrop item]
 DECLARE
   c_collection_name constant varchar2(200):='CLOB_CONTENT';
-  l_blob				     BLOB;
+  l_blobBLOB;
   l_mime				     varchar2(50);
 BEGIN
   SELECT apex_web_service.clobbase642blob(
