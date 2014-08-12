@@ -21,14 +21,17 @@
 	extendedchars = true,
 	basicstyle = \color{red}\ttfamily,
 	numbers = left,
-	frame = leftline
+	numberstyle=\color{black},
+	frame = leftline,
+	linecolor=black,
+	rulecolor=\color{black}
 	}
 \begin{document}
 
 \title{\bfseries UT Business Contracts Application Documentation}
 
 \author{
-	Coling Murray (Team Leader)
+	Colin Murray (Team Leader)
 	\and
 	Calvin Aisenbrey
 	\and
@@ -115,11 +118,25 @@ The add sub-agreements button takes the agreement\_id of the viewed agreement, a
 
 There are two add version buttons, the first one allows you to create a new version based on the max version for the agreement. We pass five different values; the first one is we pass what the next version(\&P4\_Next\_version) would be into P23\_version. The \&P4\_next\_version just uses a query to get the max version of the contract
 
-\begin{lstlisting}
-select * from utbc_agreements
+\begin{lstlisting}[caption=P4\_NEXT\_value query]
+select MAX(VERSION)+1 
+from UTBC_AGREEMENTS 
+where VERSION_PARENT = (
+select VERSION_PARENT 
+from UTBC_AGREEMENTS 
+where AGREEMENT_ID = :P4_AGREEMENT_ID)
 \end{lstlisting}
 
-The next item is the contract number, which connects the version to it's proper contract. The next assignment is the version parent, and this is just to keep things organized. The next item is the version\_id value that get's it's value from \&P4\_max\_agreement which uses a query to get what the agreement id of the max version. The form then uses this value to populate itself. Normally a form would have an "apply changes button" if the primary key is not null. To work around this the \&P4\_blank value is null and that is passed into the P23\_agreement\_id, so that the version id can be the one to populate the form; this way the form is going to be a create. 
+The next item is the contract number, which connects the version to it's proper contract. The next assignment is the version parent, and this is just to keep things organized. The next item is the version\_id value that get's it's value from \&P4\_max\_agreement which uses a query to get what the agreement id of the max version. 
+
+\begin{lstlisting}[caption=P4\_max\_agreement query]
+select agreement_id 
+from UTBC_AGREEMENTS 
+where version = :P4_max_version 
+and version_parent = :P4_version_parent
+\end{lstlisting}
+
+The form then uses this value to populate itself. Normally a form would have an "apply changes button" if the primary key is not null. To work around this the \&P4\_blank value is null and that is passed into the P23\_agreement\_id, so that the version id can be the one to populate the form; this way the form is going to be a create. 
 
 Other version button
 
