@@ -2,18 +2,18 @@
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage[margin=1in]{geometry}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{listings}
 
 \linespread{1.5}
 
 \lstdefinelanguage{SQL}{
-	keywords = {,SELECT ,FROM,JOIN,ON,WHERE, GROUP BY, AS, AND, OR, BETWEEN, UPDATE, SET, INTO,INSERT,insert,}
+	keywords = {,SELECT ,FROM,JOIN,WHERE, GROUP BY, UPDATE, INTO,INSERT, delete, if, end if, else, declare,},
 	sensitive=false,
 	keywordstyle = \color{blue},
-	ndkeywords={}
-	ndkeywordstyle = \color{red}\bfseries,
+	ndkeywords={,utbc_agreements,utbc_contract,utbc_document,utbc_email, utbc_department,utbc_vendor,utbc_former_name,utbc_tickler, utbc_approvals,utbc_agree_app,utbc_triggers,utbc_agree_trig,},
+	ndkeywordstyle = \color{OliveGreen},
 	stringstyle = \ttfamily
 }
 \lstset{
@@ -100,7 +100,48 @@ Colin
 Calvin
 
 \subsection{Agreements Form}
-Ashley
+The agreements form is made as a normal page because of the amount of information and foreign keys you could add from the agreements page. Such as adding new departments, department contacts, department administrator, and vendors from the agreements form. The contract number is assigned from a trigger and sequence
+
+\begin{lstlisting}[caption=Agreement table PK trigger]
+create or replace trigger UTBC_agreements_PK_trig 
+before insert on UTBC_agreements
+for each row 
+declare
+	type version_table IS TABLE OF UTBC_agreements.version%type;
+	t_version version_table;
+begin 
+	select UTBC_agreements_seq.nextval into :new.agreement_id from dual;
+	IF :NEW.CONTRACT_NUMBER is NULL THEN
+		select UTBC_CONTRACT_NUMBER_SEQ.nextval 
+		into :NEW.CONTRACT_NUMBER from dual;
+	END IF;
+	IF :NEW.VERSION_PARENT is NULL THEN
+		:NEW.VERSION_PARENT := :NEW.AGREEMENT_ID;
+	END IF;
+	IF :NEW.VERSION is NULL THEN
+		select 0 into :NEW.VERSION from dual;
+	ELSE 
+  	SELECT version
+  	BULK COLLECT INTO t_version 
+  	FROM UTBC_agreements 
+  	WHERE version_parent = :NEW.VERSION_PARENT AND version = :NEW.VERSION;
+  	IF t_version.count() != 0 then
+    		RAISE_APPLICATION_ERROR(-20001, 'Duplicate version.');
+  	END IF;
+	END IF;
+end; 
+\end{lstlisting}
+
+The if conditions are there because of how certain agreements are added; such as, if the contract number is null then that means it's a brand new contract. If it isn't null, then that means it's a version or sub-agreement of another contract. There is also a bulk collect and a raise application error to make sure two versions of the same number cannot be added to the same contract.
+
+The reviewed by has a special list of values displays all the user in the application. That way the user can view contracts that only pertain to them on their home page.
+
+\begin{lstlisting}[caption=Reviewed by List of Values]
+SELECT first_name||' '||last_name as d, user_name as r
+FROM APEX_WORKSPACE_APEX_USERS
+ORDER BY 1
+\end{lstlisting}
+
 
 \section{Agreements Details Page}
 
