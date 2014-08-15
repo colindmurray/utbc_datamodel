@@ -14,8 +14,12 @@
 	keywordstyle = \color{blue},
 	ndkeywords={,utbc_agreements,utbc_contract,utbc_document,utbc_email, utbc_department,utbc_vendor,utbc_former_name,utbc_tickler, utbc_approvals,utbc_agree_app,utbc_triggers,utbc_agree_trig,},
 	ndkeywordstyle = \color{OliveGreen},
+	sensitive=false,
+	morecomment=[l]{--},
+	commentstyle=\color{purple}\ttfamily,
 	stringstyle = \ttfamily
-}
+	}
+	
 \lstset{
 	language = SQL,
 	extendedchars = true,
@@ -26,6 +30,8 @@
 	linecolor=black,
 	rulecolor=\color{black}
 	}
+	
+	
 \begin{document}
 
 \title{\bfseries UT Business Contracts Application Documentation}
@@ -92,6 +98,7 @@ The next table is BOR dates (or board of regents dates). This table has no conne
 
 \subsection{Agreements Tree}
 The tree on the Agreements page is created by selecting a set of columns (status, level, title, icon, value, tooltip and link) from a table constructed from a series of unions.
+
 \begin{lstlisting}[caption=Agreement tree select statement]
 select case when connect_by_isleaf = 1 then 0
             when level = 1             then 1
@@ -99,10 +106,14 @@ select case when connect_by_isleaf = 1 then 0
        end as status, 
        level,
        label||to_char(name) as title, 
-       case when item_type = 'C' then '#IMAGE_PREFIX#menu/blue_function_16x16.gif' 
-            when item_type = 'A' then '#IMAGE_PREFIX#menu/jtfunexe_16x16.gif'
-            when item_type = 'V' then '#IMAGE_PREFIX#menu/blue_folder_16x16.gif'
-            when item_type = 'VE' then '#IMAGE_PREFIX#menu/hs_infohidden_16x16.gif'
+       case when item_type = 'C' then 
+       '#IMAGE_PREFIX#menu/blue_function_16x16.gif' 
+            when item_type = 'A' then 
+            '#IMAGE_PREFIX#menu/jtfunexe_16x16.gif'
+            when item_type = 'V' then 
+            '#IMAGE_PREFIX#menu/blue_folder_16x16.gif'
+            when item_type = 'VE' then 
+            '#IMAGE_PREFIX#menu/hs_infohidden_16x16.gif'
        else null
        end as icon, 
        id as value, 
@@ -110,14 +121,21 @@ select case when connect_by_isleaf = 1 then 0
             else name
        end as tooltip,
        case when item_type = 'C' then 
-               apex_util.prepare_url('f?p='||:app_id||':4:'||:app_session||':T::4:P7_TREE_NODE,P4_AGREEMENT_ID:'||id||','||id)
+               apex_util.prepare_url(
+               'f?p='||:app_id||':4:'||:app_session||':T::4:P7_TREE_NODE,
+               P4_AGREEMENT_ID:'||id||','||id)
             when item_type = 'A' then
-               apex_util.prepare_url('f?p='||:app_id||':4:'||:app_session||':T::4:P7_TREE_NODE,P4_AGREEMENT_ID:'||id||','||id)
+               apex_util.prepare_url(
+               'f?p='||:app_id||':4:'||:app_session||':T::4:P7_TREE_NODE,
+               P4_AGREEMENT_ID:'||id||','||id)
             when item_type = 'VE' then 
-               apex_util.prepare_url('f?p='||:app_id||':4:'||:app_session||':T::4:P7_TREE_NODE,P4_AGREEMENT_ID:'||id||','||id)
+               apex_util.prepare_url(
+               'f?p='||:app_id||':4:'||:app_session||':T::4:P7_TREE_NODE,
+               P4_AGREEMENT_ID:'||id||','||id)
        end as link 
  from ( ...
 \end{lstlisting}
+
 The primary things to note are:
 \begin{itemize}
 	\item The name of each node entry on the tree is derived from the 'title' column which is composed of the 'label' appended with the 'name' columns.
@@ -125,37 +143,52 @@ The primary things to note are:
   \item The link column specifies where the page navigates when a node is clicked.  It is also dependent on the value in the item\_type column.  There is no link for when item\_type = 'V' as there is with icon because items of this type represent the version folder which will be discussed later.  The version folder has no link since it does not represent a real database item.
 \end{itemize}
 The sql after the from clause constructs a table from a series of unions.  Each union is between the UTBC\_agreements table and itself, but with different rows being selected.  Each union also gets all the rows for one of the 4 item\_types: 
+
 \begin{itemize}
 	\item C  (for base contract)
 	\item A  (for any sub-agreement like an amendment)
 	\item V  (for the version folder)
 	\item VE (for all versions of a particular contract or sub-agreement).
 \end{itemize}
+
 \begin{lstlisting}[caption=Selecting the max version of each contract in the agreements table.]
---Top of the tree, populated with max versions of each contract.  Agreement parent is null.  Links only to the max version for this contract
+--Top of the tree, populated with max versions of each contract.  
+--Agreement parent is null.  Links only to the max version for this contract
 SELECT 'C' item_type,
        a.type||': ' label,
        a.AGREEMENT_ID id,
-       --children of this contract should have their parent column match this tree_id
+       --children of this contract should have 
+       --their parent column match this tree_id
        to_char(a.version_parent)||'-'||a.type tree_id,
        --parent should be null
        null parent,
        --constructs the displayed name for a contract in the tree
-       to_char(a.contract_number) || ' | ' || (select name from UTBC_vendor where vendor_id = a.vendor_id) || ' | ' ||
-          (select name from UTBC_department where department_id = a.department_id) || ' | ' || to_char(a.start_date, 'MM/DD/YYYY') name, 
+       to_char(a.contract_number) || ' | ' || (
+       select name from UTBC_vendor where vendor_id = a.vendor_id) || ' | ' ||
+          (select name from UTBC_department 
+          where department_id = a.department_id)
+           || ' | ' || to_char(a.start_date, 'MM/DD/YYYY') name, 
        t.tooltip tooltip,
        null link,
        a.DATE_ACCESSED
-  FROM UTBC_agreements a, (SELECT wwv_flow_lang.system_message('Contract tooltip placeholder') tooltip FROM dual) t
-  WHERE a.agreement_parent IS null AND a.version = (SELECT MAX(version) FROM UTBC_agreements WHERE version_parent = a.version_parent) and ROWNUM <= :P7_ROW_NUM
+  FROM UTBC_agreements a, (
+  SELECT wwv_flow_lang.system_message('Contract tooltip placeholder') 
+  tooltip FROM dual) t
+  WHERE a.agreement_parent IS null AND a.version = (
+  SELECT MAX(version) FROM UTBC_agreements 
+  WHERE version_parent = a.version_parent) and ROWNUM <= :P7_ROW_NUM
 \end{lstlisting}
+
 The item\_type column in this select is set to 'C'.  The 'label' column is simply the type column in the agreements table.  In this case that type should be the string 'Contract'.  The 'id' is populated with the agreement\_id of each contract chosen by the select.  The 'name' column is constructed by appending the contract\_number, vendor name, department name and start\_date columns together.  The date\_accessed column is used for sorting.  The most important aspect is the 'parent' and 'tree\_id' columns.
+
 \begin{itemize}
 	\item 'tree\_id' specifies the unique identifier that will associate this item with all of it's children.  It is the 'version\_parent' column appended with the type (which is 'Contract').  The version\_parent column will be shared between all versions of this contract, so any child of this contract (say a sub-agreement) can be seen as a child of the version\_parent (which is the agreement\_id of version 0 for all entries in the agreements table).
 	\item 'parent' specifies the 'tree\_id' this entry will become a child of.  Since this first select represents the top of the tree, the parent column is left null.
 \end{itemize}
+
 !!The tooltip is currently a placeholder chosen from dual, but will change later.
 The WHERE clause first makes sure the agreement\_parent column for this agreement is NULL.  All contracts have a null agreement\_parent since they are not sub-agreements.  It next specifies the version column should be the max version for this particular contract.  This can be done by finding the max for all rows that have the same version\_parent column, since only versions of the same agreement share a version\_parent.  Finally, the number of top-level rows displayed depends on the ROWNUM being less than :P7\_ROW\_NUM, an LOV item on the page which allows 10, 50 and 100 recently viewed contracts to be shown at one time.
+
 \begin{lstlisting}[caption=Select statement grabbing all sub-agreements and piling them under their parent contracts.]
 UNION ALL
 --Gets all sub-agreements (anything with a non-null agreement_parent column).  Links only to the max version for this sub-agreement
@@ -164,41 +197,60 @@ SELECT 'A' item_type,
        b.agreement_id id,
        --tree id should have the form (version_parent)-(sub-agreement type)
        to_char(b.version_parent)||'-'||b.type tree_id,
-       --these should only match up with the agreement_id their parent contracts
+       --these should only match up with the 
+       --agreement_id their parent contracts
        to_char(b.agreement_parent)||'-Contract' parent,
        --display name for a sub-agreement in the tree
-       to_char(b.contract_number) || ' - ' || to_char(b.start_date, 'MM/DD/YYYY')  name,
+       to_char(b.contract_number) || ' - ' || 
+       to_char(b.start_date, 'MM/DD/YYYY')  name,
        u.tooltip tooltip,
        b.DATE_ACCESSED,
        null link
-  FROM UTBC_agreements b, (SELECT wwv_flow_lang.system_message('Sub-agreement tooltip placeholder') tooltip FROM dual) u
-  WHERE b.version = (SELECT MAX(version) FROM UTBC_agreements WHERE version_parent = b.version_parent) AND b.agreement_parent IS NOT null
+  FROM UTBC_agreements b, (
+  	SELECT wwv_flow_lang.system_message
+		('Sub-agreement tooltip placeholder') tooltip FROM dual) u
+  WHERE b.version = (
+  	SELECT MAX(version) 
+	FROM UTBC_agreements 
+	WHERE version_parent = b.version_parent) 
+	AND b.agreement_parent IS NOT null
 \end{lstlisting}
 This select statement grabs all sub-agreements and associates them as children in the tree to their parent contracts.  The item\_type column is 'A' (standing for Amendment, though they could be any type of sub-agreement).  Many of the columns are otherwise very similar with the exception of tree\_id and parent.
+
 \begin{itemize}
 	\item 'tree\_id' will carries the main distinction that b.type will never be 'Contract'.  This allows a way to distinguish whether a version entry in the tree should fall under a contract or a sub-agreement.
 	\item 'parent' is created by appending the agreement\_parent with the string '-Contract'.  This hard-codes sub-agreements to always fall under entries that are of type 'Contract'.  The agreement\_parent will always match the version\_parent column for the parent contract, each referring to the agreement\_id of version 0.
 \end{itemize}
+
 The where clause selects only agreements where the agreement\_parent column is NOT NULL (meaning it is a sub-agreement) and where the row selected is the max version for this particular sub-agreement (this is done the same way it is done for contracts explained earlier).
+
 \begin{lstlisting}[caption=Select statement creating a dummy version folder entry in the tree.]
---Dummy selection used to create a versions folder to store all the versions for an agreement in
+--Dummy selection used to create a versions 
+--folder to store all the versions for an agreement in
 SELECT 'V' item_type,
        'Versions' label,
        c.AGREEMENT_ID id,
        to_char(c.version_parent)||'-'||c.type||'-v' tree_id,
-       to_char(c.version_parent)||'-'||c.type parent,--(select type from utbc_agreements where agreement_id = c.parent) parent,
+       to_char(c.version_parent)||'-'||c.type parent,--(
+       	select type from utbc_agreements where agreement_id = c.parent) parent,
        null name,
        w.tooltip tooltip,
        c.DATE_ACCESSED,
        null link
-  FROM UTBC_agreements c, (SELECT wwv_flow_lang.system_message('Version folder tooltip placeholder') tooltip FROM dual) w
+  FROM UTBC_agreements c, (
+  	SELECT wwv_flow_lang.system_message
+		('Version folder tooltip placeholder') 
+		tooltip FROM dual) w
   WHERE c.version = 0
 \end{lstlisting}
+
 The select statement above is of item\_type 'V'.  It creates all the version folders in the tree.  Every contract or sub\_agreement node in the tree should have a version folder as a child node.  To achieve this, the version folder actually represents version 0 of the associated agreement.  Since all contracts or sub-agreements have exactly one version 0, all entries in the tree will receive a version folder.
+
 \begin{itemize}
 	\item 'tree\_id' in this case is the version\_parent column, concatenated with the type of agreement, concatenated with '-v'.  The '-v' at the end distinguishes this entry as the version folder and will be used in the 4th union to pile all version entries under this tree-id.
 	\item 'parent' operates the same as it would with sub-agreements, except version\_parent is used instead of agreement\_parent.
 \end{itemize}
+
 \begin{lstlisting}[caption=Select statement getting all versions for a particular contract and making them children of the version folder.]
 UNION ALL
 --versions selected here will fall under the version folder
@@ -211,21 +263,30 @@ SELECT 'VE' item_type,
        x.tooltip tooltip,
        null link,
        e.DATE_ACCESSED
-  FROM UTBC_agreements e, (SELECT wwv_flow_lang.system_message('Version tooltip placeholder') tooltip FROM dual) x
+  FROM UTBC_agreements e, (
+  SELECT wwv_flow_lang.system_message
+  	('Version tooltip placeholder') 
+	tooltip FROM dual) x
 \end{lstlisting}
+
 The item\_type for this last union is 'VE'.  The main items to note are the tree\_id and parent:
+
 \begin{itemize}
 	\item 'tree\_id' is simply the agreement\_id for this version concatenated with an indicator, specifying that this tree entry is a version.  Since version's have no children, this is unused as of yet.
 	\item 'parent' binds all versions of a particular contract as children of the appropriate version folder.  It is constructed in the exact same way 'tree\_id' is created for the version folder entries, meaning even version 0 (which is exploited to create the version folder) is a child of the version folder.  This also demonstrates why version 0 is a child of its self (in terms of version\_parent).
 \end{itemize}
+
 There is no where clause since every item in the agreements table is a version of something.
+
 \begin{lstlisting}[caption=final pieces of the initial select statement creating the tree structure.]
 )
 START WITH parent IS null
 CONNECT BY PRIOR tree_id = parent
 order siblings by DATE_ACCESSED desc, name
 \end{lstlisting}
+
 This statement comes after the from ( ... unions ... ) clause and is responsible for building the tree structure.  It suggests that the first entries in the tree are ones with a NULL parent column.  That child entries are associated with parent entries if the parent's 'tree\_id' matches the child's 'parent' columns.  Finally, all entries in the tree are ordered by the date an agreement was most recently viewed first, then the name second.
+
 \subsection{Agreements Search Bar}
 Colin 
 
