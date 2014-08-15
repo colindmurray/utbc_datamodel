@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 AUG 2014 21:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  15 AUG 2014 18:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -410,14 +410,6 @@ l.64 \end{image}
 ? 
 [2 <./UTBC_model.png>]
 Chapter 1.
-./documentation.tex:73: Misplaced alignment tab character &.
-l.73 Chris &
-             Alex
-? 
-./documentation.tex:76: Misplaced alignment tab character &.
-l.76 Chris &
-             Alex
-? 
 [3
 
 ]
@@ -476,15 +468,15 @@ Overfull \hbox (21.64403pt too wide) in paragraph at lines 321--322
  []
 
 [11] [12] [13] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 440.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
  [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
  (./documentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 440.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 440.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
 Package rerunfilecheck Info: File `documentation.out' has not changed.
 (rerunfilecheck)             Checksum: DCB61B83CB0BA8415BBC9622DD6E7C79;1580.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 440.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 442.
  ) 
 Here is how much of TeX's memory you used:
  7729 strings out of 493315
@@ -500,7 +492,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on documentation.pdf (17 pages, 424481 bytes).
+Output written on documentation.pdf (17 pages, 428089 bytes).
 PDF statistics:
  477 PDF objects out of 1000 (max. 8388607)
  446 compressed objects within 5 object streams

@@ -70,10 +70,10 @@ Put abstract here
 \section{Contract Table}
 
 \section{UTBC\_approvals and UTBC\_Agree\_App Tables}
-Chris & Alex
+The UTBC\_approvals table stores the name of type of approvals. An example of one row would be ?3 Informal Quotes?. It has a one-to-many relationship with UTBC\_Agree\_App, this was done to simulate a many-to-many relationship from UTBC\_approvals to UTBC\_agreements. By having the UTBC\_Agree\_App, more information can be stored as attributes (parent integer, complete boolean). The parent and complete attribute, helps keep a sense of hierarchy of the approvals that still need to be completed. 
 
 \section{UTBC\_triggers and UTBC\_Agree\_Trig Tables}
-Chris & Alex
+The UTBC\_triggers table stores the trigger words (ie >25k, computer access, etc) which need a certain set of approvals. In the table there are two VARCHAR attributes named sql\_insert and sql\_delete. As the name suggest the attribute contains names to procedures which either insert or delete rows from the UTBC\_Agree\_App table which are executed by a trigger. The UTBC\_triggers has a one-to-many relationship to UTBC\_Agree\_Trig table which it has a many-to-one relationship to UTBC\_Agreements. This was done to simulate a many-to-many relationship from UTBC\_triggers to UTBC\_Agreements. 
 
 \chapter{Application}
 
@@ -291,7 +291,7 @@ This statement comes after the from ( ... unions ... ) clause and is responsible
 Colin 
 
 \subsection{Agreements Sorting}
-Calvin
+The agreements are sorted by showing the agreements which were accessed the most recent at the top of the tree and with agreements accessed the least recent at the bottom. This was accomplished by adding a DATE\_ACCESSED attribute to all of the sub-queries in the tree. At the end of the query the tree is ordered by DATE\_ACCESSED and then alphabetically by name. 
 
 \subsection{Agreements Form}
 The agreements form is made as a normal page because of the amount of information and foreign keys you could add from the agreements page. Such as adding new departments, department contacts, department administrator, and vendors from the agreements form. The contract number is assigned from a trigger and sequence
@@ -340,13 +340,15 @@ ORDER BY 1
 \section{Agreements Details Page}
 
 \subsection{Purpose region}
-Calvin
+In order to make the Purpose editable inside the page we decided to go with a design which it would appear to the user that nothing changed on the page except that the page became editable. For this piece to work we have two static HTML containers which hold the P4\_PURPOSE\_READ item and P4\_PURPOSE item. The P4\_PURPOSE\_READ item specifies in its ?HTML Form Element Attributes? that it is read-only whereas in the P4\_PURPOSE item it is not specified. 
+	When the edit button is clicked the static HTML page which holds P4\_PURPOSE\_READ is hidden and the static HTML page which holds P4\_PURPOSE is shown using a dynamic action. In order to change the page back to where Purpose isn't editable anymore the ?Save Edit? button has to be clicked. When this happens P4\_PURPOSE is submitted and the page reloads in order to reflect the change made also using a dynamic action. 
+
 
 \subsection{Related Region}
 colin
 
 \subsection{Notes Region}
-calvin
+The Notes Region is made exactly like the Purpose Region except that it uses two different static HTML pages, P4\_NOTE, P4\_NOTE\_READ, two different button, and two different dynamic actions. The logic behind all the regions, items, buttons, and dynamic actions are exactly the same.
 
 \subsection{Add Sub-Agreement, Add Version}
 The add sub-agreements button takes the agreement\_id of the viewed agreement, and passes it to the item P23\_agreement\_parent on the form. The top level contract's agreement parent should be null because it has not parent, and setting the agreement parent relates the sub-agreement to it's parent contract.
