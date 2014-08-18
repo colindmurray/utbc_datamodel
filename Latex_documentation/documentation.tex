@@ -78,11 +78,24 @@ The UTBC\_triggers table stores the trigger words (ie  >25k, computer access, et
 \chapter{Application}
 
 \section{Home Page}
-The home page consists of three different tables; contracts, ticklers, and BOR dates. The tables only displays contracts that are renewable and are expiring in the next 60 days. The table also only displays contracts that pertain to the user logged in using the where clause
+The home page consists of four different tables; contracts, ticklers, and BOR dates. The contracts table only displays contracts that are renewable and are expiring in the next 60 days. The table also only displays contracts that pertain to the user logged in, and duplicate contracts (versions or sub-agreement on the same contracts) are not shown because of the condition on the ``Final" column.
 
 \begin{lstlisting}[caption=Contracts table where clause for user]
 WHERE reviewed_by APEX_UTIL.GET_SESSION_STATE('APP_USER')
+AND upper(a.renewable) = 'Y' and end_date between SYSDATE and SYSDATE + 60
+and FINAL = 'Y'
 \end{lstlisting}
+
+The next contracts table is the ``Assigned To" table that will only show contracts that pertain to the user logged in, and that are currently being worked on. This is accomplished using the where clause:
+
+\begin{lstlisting}
+where a.assigned_to = APEX_UTIL.GET_SESSION_STATE('APP_USER') 
+and (a.status = 'Assigned To' or a.status = 'In Progress')
+and a.version = (
+select MAX(VERSION) from UTBC_AGREEMENTS where VERSION_PARENT = a.version_parent);
+\end{lstlisting}
+
+Duplicates (version, sub-agreement on same contract) are eliminated with the subquery that starts in line three. This is also to insure that the linked contract goes to the max version.
 
 The next table is ticklers (or reminders), which only displays ticklers pertaining to the user that is logged in as well as public ticklers for everyone to see. We used the following where clause to do this
 
@@ -91,7 +104,18 @@ WHERE t.created_by = APEX_UTIL.GET_SESSION_STATE('APP_USER')
 OR PUBLIC_T = 'Y'
 \end{lstlisting}
 
-In this ticklers table, two tables are joined; the UTBC\_ticklers and UTBC\_contact tables. That way the user can easily email the corresponding person about the tickler. 
+In this ticklers table, two tables are joined; the UTBC\_ticklers and UTBC\_contact tables. That way the user can easily email the corresponding person about the tickler. In the select statement, a NVL was used to make sure that if a tickler didn't have an email, that the null representation would not have a link on it.
+
+\begin{lstlisting}
+NVL(c.email, ' ')
+\end{lstlisting}
+
+The email link was created using an html tag in the column attributes
+
+\begin{lstlisting}[caption = Email link in html tag]
+<a href="mailto:#NVL(C.EMAIL,'')#">#NVL(C.EMAIL,'')#</a>
+\end{lstlisting}
+
 The next table is BOR dates (or board of regents dates). This table has no connect do our data model and is a stand alone table. The table has two attributes, due date and meeting date. The due date is the day the office will have to get certain paperwork submitted to be on the associated meeting date.
 
 \section{Agreements Home Page}
