@@ -70,10 +70,10 @@ Put abstract here
 \section{Contract Table}
 
 \section{UTBC\_approvals and UTBC\_Agree\_App Tables}
-The UTBC\_approvals table stores the name of type of approvals. An example of one row would be ?3 Informal Quotes?. It has a one-to-many relationship with UTBC\_Agree\_App, this was done to simulate a many-to-many relationship from UTBC\_approvals to UTBC\_agreements. By having the UTBC\_Agree\_App, more information can be stored as attributes (parent integer, complete boolean). The parent and complete attribute, helps keep a sense of hierarchy of the approvals that still need to be completed. 
+The UTBC\_approvals table stores the name of type of approvals. An example of one row would be 3 Informal Quotes. It has a one-to-many relationship with UTBC\_Agree\_App, this was done to simulate a many-to-many relationship from UTBC\_approvals to UTBC\_agreements. By having the UTBC\_Agree\_App, more information can be stored as attributes (parent integer, complete boolean). The parent and complete attribute, helps keep a sense of hierarchy of the approvals that still need to be completed. 
 
 \section{UTBC\_triggers and UTBC\_Agree\_Trig Tables}
-The UTBC\_triggers table stores the trigger words (ie >25k, computer access, etc) which need a certain set of approvals. In the table there are two VARCHAR attributes named sql\_insert and sql\_delete. As the name suggest the attribute contains names to procedures which either insert or delete rows from the UTBC\_Agree\_App table which are executed by a trigger. The UTBC\_triggers has a one-to-many relationship to UTBC\_Agree\_Trig table which it has a many-to-one relationship to UTBC\_Agreements. This was done to simulate a many-to-many relationship from UTBC\_triggers to UTBC\_Agreements. 
+The UTBC\_triggers table stores the trigger words (ie  >25k, computer access, etc) which need a certain set of approvals. In the table there are two VARCHAR attributes named sql\_insert and sql\_delete. As the name suggest the attribute contains names to procedures which either insert or delete rows from the UTBC\_Agree\_App table which are executed by a trigger. The UTBC\_triggers has a one-to-many relationship to UTBC\_Agree\_Trig table which it has a many-to-one relationship to UTBC\_Agreements. This was done to simulate a many-to-many relationship from UTBC\_triggers to UTBC\_Agreements. 
 
 \chapter{Application}
 
@@ -378,7 +378,51 @@ The form then uses this value to populate itself. Normally a form would have an 
 Other version button
 
 \subsection{Approvals Region}
-Chris
+Approvals for contracts are listed in the Triggers Region in the page Form on UTBC\_Agreements(non-modal).   On that page, we have a process called Triggers which inserts in to the UTBC\_Agree\_Trig table the current agreement id and the trigger id for the box checked by the user for the appropriate trigger.  All of the triggers are listed in the table UTBC\_Triggers.  Here is the code for the insertion for the process:
+
+\begin{lstlisting}
+FOR i IN 1..APEX_APPLICATION.G_F01.COUNT LOOPINSERT INTO UTBC_AGREE_TRIG(agree_trig_id, agreement_id, trigger_id)  VALUES(1,:P23_agreement_id, to_number(APEX_APPLICATION.G_F01(i)));END LOOP;
+\end{lstlisting}
+
+Once the contract has been created, the appropriate approvals can be viewed under the Approvals Region on the page Agreement\_details.  The Approvals Region contains the sub-regions Add Approval, Delete Approval, and Requirements.  Users can perform several actions, including: 
+
+\begin{itemize}
+\item Checking individual boxes next to each required approval to indicate that it has been fulfilled
+\item Adding an additional approval that this particular contract may need in addition to the standard trigger that was initially selected in the create process. 
+\item Deleting an approval that may not be necessary for this contract
+\end{itemize}
+
+There are three processes associated with the above actions 
+\begin{itemize}
+\item Approvals Apply Update:  Once the user checks that a requirement has been fulfilled, he will hit the Apply button.  This process will ensure that these checked boxes will remain checked when the user navigates away from this contract?s page and then returns at a later time.  It does this by using a cursor to defined as being the agreement approval ids in the UTBC\_agree\_app table matching this agreement.  We then loop through the checkboxes to see which are checked and then setting the complete column in that table to ?y? if that required approval has been checked.  The Code is as follows: 
+\begin{lstlisting}
+DECLARECURSOR agree_app_cursor IS  select agree_app_id FROM UTBC_agree_app Where agreement_id = :P4_agreement_id;   x CHAR; BEGINFor c in agree_app_cursorLOOPx := 'n'; For i in 1..APEX_APPLICATION.G_F01.count  	LOOP		IF APEX_APPLICATION.G_F01(i) = c.agree_app_id THENx:='y';   		END IF;     	END LOOP;  Update UTBC_agree_appSet complete = xWhere agree_app_id = c.agree_app_id; END LOOP;END;
+\end{lstlisting}
+\item Add Approval:  This inserts into the UTBC\_Agree\_App table the appropriate approval selected from our :P4\_Add\_Approval\_LOV. The Code is as follows: 
+
+\begin{lstlisting}
+BEGINIF :P4_ADD_APPROVAL_LOV IS NOT NULL THENinsert into UTBC_agree_app(approval_id, parent, complete, agreement_id) values (:P4_ADD_APPROVAL_LOV, null, 'n', :P4_agreement_id);END IF;END;
+\end{lstlisting}
+
+The LOV only includes approvals not already listed in the Approvals Region that were inserted when the contract was initially created.  The code for the ADD\_APPROVAL\_LOV is the following: 
+
+\begin{lstlisting}
+SELECT name, approval_id FROM UTBC_approvalsWHERE name NOT IN (SELECT name from UTBC_approvals a RIGHT JOIN UTBC_agree_app b ON a.approval_id = b.approval_idWHERE agreement_id = :P4_AGREEMENT_ID)
+\end{lstlisting}
+
+\item Delete Approval:  This deletes from the UTBC\_Agree\_App table the appropriate approval selected from our :P4\_Delete\_Approval\_LOV for this agreement.  The Code is as follows: 
+
+\begin{lstlisting}
+BEGINIF :P4_DELETE_APPROVAL_LOV IS NOT NULL THENDELETE FROM  UTBC_agree_app WHERE approval_id = :P4_DELETE_APPROVAL_LOV AND agreement_id = :P4_agreement_id;END IF;END;
+\end{lstlisting}
+The code for the DELETE\_APPROVAL\_LOV is the following: 
+
+\begin{lstlisting}
+SELECT name, approval_id FROM UTBC_approvalsWHERE name IN (SELECT name from UTBC_approvals a RIGHT JOIN UTBC_agree_app b ON a.approval_id = b.approval_id WHERE agreement_id = :P4_AGREEMENT_ID)
+\end{lstlisting}
+
+\end{itemize}
+
 
 \section{Other Forms}
 
